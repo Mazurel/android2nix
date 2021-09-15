@@ -20,6 +20,19 @@ Build the app
 nix build .#release
 ```
 
+## Possible fixes for issues
+
+### Gradle can't resolve XYZ dependency
+
+If you are facing this kind of issue, you will need to manually update `deps.list` file (packages are newline separated).
+Just add `<dependency and version>` to this file, got into devshell and run:
+
+```bash
+generate --root-dir <dir> --task gen_deps_urls
+generate --root-dir <dir> --task gen_deps_json
+```
+
+This should resolve such issue.
 
 
 
