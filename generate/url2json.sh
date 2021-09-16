@@ -7,14 +7,20 @@
 #
 
 # This defines URLs of Maven repos we know about and use.
-declare -a REPOS=(
-  "https://repo.maven.apache.org/maven2"
-  "https://dl.google.com/dl/android/maven2"
-  "https://plugins.gradle.org/m2"
-  "https://jitpack.io"
-  "https://repo1.maven.org/maven2"
-  "https://plugins.gradle.org/m2/"
-)
+
+if [ "$REPOS_FILE" == "" ]; then
+    declare -a REPOS=(
+	# As many repos as I know
+	"https://repo.maven.apache.org/maven2"
+	"https://dl.google.com/dl/android/maven2"
+	"https://plugins.gradle.org/m2"
+	"https://jitpack.io"
+	"https://repo1.maven.org/maven2"
+	"https://plugins.gradle.org/m2/"
+    )
+else
+    IFS="\n" declare -a REPOS=$(cat "$REPOS_FILE")
+fi
 
 function nix_fetch() {
     nix-prefetch-url --print-path --type sha256 "${1}" 2>/dev/null

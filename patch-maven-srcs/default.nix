@@ -20,4 +20,6 @@ writeScript "patch-maven-srcs" (''
   patchMavenSource "$gradleFile" 'google()'                             'mavenLocal()'
   patchMavenSource "$gradleFile" 'jcenter()'                            'mavenLocal()'
   patchMavenSource "$gradleFile" 'maven { url "https://jitpack.io" }'   'mavenLocal()'
+  patchMavenSource "$gradleFile" 'maven { url 'https://plugins.gradle.org/m2/' }'   'mavenLocal()'
+  
 '')

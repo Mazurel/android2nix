@@ -56,6 +56,9 @@ stdenv.mkDerivation rec {
 
   JAVA_HOME = "${pkgs.jdk}";
 
+  GRADLE_OPTS =
+    "-Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2";
+
   # Used by the Android Gradle build script in android/build.gradle
   # STATUS_GO_ANDROID_LIBDIR = "${status-go}";
 
@@ -120,6 +123,7 @@ stdenv.mkDerivation rec {
         --offline --stacktrace \
         -Dorg.gradle.daemon=false \
         -Dmaven.repo.local='${deps}' \
+        -Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2 \
         -PversionCode=${toString buildNumber} \
         assemble${gradleBuildType} \
         || exit 1

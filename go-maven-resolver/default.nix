@@ -9,10 +9,9 @@ in buildGo116Module rec {
   vendorSha256 = "sha256-dlqI+onfeo4tTwmHeq8heVKRzLU1gFEQ+4iv+8egN90=";
 
   src = fetchFromGitHub rec {
-    name = "${repo}-${version}-source";
     owner = "Mazurel";
     repo = pname;
-    rev = version;
-    sha256 = "sha256-OARMadvrfRKz5l0njy5WmWiHoXIrPQDHL3xgRvZZSl4=";
+    rev = "7e4536d38b6e27c3cb52ba310e039df93b3b0229";
+    sha256 = "sha256-S7VyuRNyF+JepN0dN3hkZEsFIndNhwqO7u1fjXj5eFw=";
   };
 }

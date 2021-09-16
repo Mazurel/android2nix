@@ -185,6 +185,7 @@ net.jcip:jcip-annotations:1.0
 net.ltgt.gradle.incap:incap:0.2
 net.sf.jopt-simple:jopt-simple:4.9
 net.sf.kxml:kxml2:2.3.0
+net.sf.proguard:proguard-base:6.0.3
 org.apache-extras.beanshell:bsh:2.0b6
 org.apache.ant:ant-launcher:1.8.0
 org.apache.ant:ant:1.8.0
@@ -284,6 +285,7 @@ org.jmock:jmock-junit4:2.12.0
 org.jmock:jmock-legacy:2.12.0
 org.jmock:jmock-testjar:2.12.0
 org.jmock:jmock:2.12.0
+org.json:json:20180813
 org.jsoup:jsoup:1.13.1
 org.jvnet.staxex:stax-ex:1.8
 org.mockito:mockito-core:3.9.0
@@ -312,8 +314,6 @@ org.slf4j:slf4j-api:1.7.16
 org.slf4j:slf4j-api:1.7.30
 org.slf4j:slf4j-simple:1.7.30
 org.whispersystems:curve25519-java:0.5.0
+ru.vyarus:gradle-animalsniffer-plugin:1.5.3
 tools.fastlane:screengrab:2.0.0
 uk.co.samuelwall:material-tap-target-prompt:3.3.0
-ru.vyarus:gradle-animalsniffer-plugin:1.5.3
-net.sf.proguard:proguard-base:6.0.3
-org.json:json:20180813

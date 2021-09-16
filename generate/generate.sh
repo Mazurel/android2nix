@@ -9,6 +9,9 @@ if [[ -z "${IN_NIX_SHELL}" ]]; then
     exit 1
 fi
 
+# Default parameters that can be overrided by parsing
+JOBS=1
+
 # Parse arguments
 while [[ ! "$@" == "" ]]; do
     case "$1" in
@@ -23,8 +26,16 @@ while [[ ! "$@" == "" ]]; do
 	    shift
 	    GEN_TASK="$1"
 	    ;;
+	--repos-file)
+	    shift
+	    # We need to export it so that it will be available to url2json.sh
+	    export REPOS_FILE="$(realpath $1)"
+	    ;;
+	--jobs|-j)
+	    shift
+	    JOBS=$1
 	--help|-h)
-	    echo "$0 [-(-h)elp] [--root-dir <directory>] [--nested-in-android] [--task <task>]"
+	    echo "$0 [-(-h)elp] [--root-dir <directory>] [--nested-in-android] [--task <task>] [--repos-file <repos.txt>] [-(-j)obs <n>]"
 	    echo ""
 	    echo "ARGUMENTS:"
 	    echo "    --root-dir - Specify directory which will be treated as root of your project"
@@ -38,17 +49,22 @@ while [[ ! "$@" == "" ]]; do
 	    echo "           * gen_deps_json"
 	    echo "             by default all of them are run from the top to bottom"
 	    echo ""
-	    echo "    --help - Show this menu"
+	    echo "    --repos-file - txt file that contains list of maven repos to use"
+	    echo ""
+	    echo "    -(-j)obs - Number of parallel jobs (used when possible)"
+	    echo ""
+	    echo "    -(-h)elp - Show this menu"
+	    echo ""
+	    echo "NOTES:"
+	    echo "This script loads additional dependencies (that aren't automatically loaded) from `additional-deps.list` file that has the same structure as `deps.list`. It assumes that this file is avaible in PWD."
 	    exit
 	    ;;
     esac
     shift
 done
 
-# This script takes care of generating/updating the maven-sources.nix file
-# representing the offline Maven repo containing the dependencies
-# required to build the project
 
+# Load root of the android project
 [ "$GIT_ROOT" == "" ] && \
     GIT_ROOT=$(cd "${BASH_SOURCE%/*}" && git rev-parse --show-toplevel)
 
@@ -67,6 +83,8 @@ export RST='\033[0m'
 # Clear line
 export CLR='\033[2K'
 
+# Output and input files
+ADDITIONAL_DEPS_LIST="$CUR_DIR/additional-deps.list"
 PROJ_LIST="$CUR_DIR/proj.list"
 DEPS_LIST="$CUR_DIR/deps.list"
 DEPS_URLS="$CUR_DIR/deps.urls"
@@ -86,9 +104,9 @@ function get_deps() {
     local -a NORMAL_DEPS
     local -a ANDROID_DEPS
     for i in "${!DEPS[@]}"; do
-	# BUILD_DEPS[${i}]="${DEPS[${i}]}:buildEnvironment" || echo No build dependencies
-	NORMAL_DEPS[${i}]="${DEPS[${i}]}:dependencies" || echo No dependencies
-	# ANDROID_DEPS[${i}]="${DEPS[${i}]}:androidDependencies" || echo No android dependencies
+	# BUILD_DEPS[${i}]="${DEPS[${i}]}:buildEnvironment"
+	NORMAL_DEPS[${i}]="${DEPS[${i}]}:dependencies"
+	# ANDROID_DEPS[${i}]="${DEPS[${i}]}:androidDependencies"
     done
 
     # And clean up the output by:
@@ -105,6 +123,9 @@ function get_deps() {
 	"${ANDROID_DEPS[@]}" \
 	"${BUILD_DEPS[@]}" \
 	| awk -f ${AWK_SCRIPT}
+
+    # Load additional deps if they exist
+    [ -f "$ADDITIONAL_DEPS_LIST" ] && cat $ADDITIONAL_DEPS_LIST
 }
 
 function get_projects() {
@@ -128,7 +149,11 @@ function gen_deps_list() {
 
 # Find download URLs for each dependency.
 function gen_deps_urls() {
-    cat ${DEPS_LIST} | go-maven-resolver | sort -uV -o ${DEPS_URLS}
+    GO_MAVEN_RESOLVER_ARGS=""
+    [ -f "$REPOS_FILE" ] && \
+	GO_MAVEN_RESOLVER_ARGS="$GO_MAVEN_RESOLVER_ARGS -reposFile $REPOS_FILE"
+
+    cat ${DEPS_LIST} | go-maven-resolver $GO_MAVEN_RESOLVER_ARGS | sort -uV -o ${DEPS_URLS}
     echo -e "${CLR}Found ${GRN}$(wc -l < ${DEPS_URLS})${RST} dependency URLs..."
 }
 
@@ -141,6 +166,7 @@ function gen_deps_json() {
     URLS=$(cat ${DEPS_URLS})
     parallel --will-cite --keep-order \
         url2json.sh \
+	--jobs $JOBS \
         ::: ${URLS} \
         >> ${DEPS_JSON}
 
@@ -160,13 +186,7 @@ echo "Regenerating Nix files..."
 # Stop gradle daemons to avoid locking
 ./gradlew --stop >/dev/null
 
-# A way to run a specific stage of generation
-if [[ -n "${1}" ]] && type ${1} > /dev/null; then
-    ${1}; exit 0
-elif [[ -n "${1}" ]]; then
-    echo "No such function: ${1}"; exit 1
-fi
-
+# Run proper tasks
 
 if [ ! "$GEN_TASK" == "" ]; then
     echo Running "$GEN_TASK" ...

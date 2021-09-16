@@ -2498,6 +2498,20 @@
   },
 
   {
+    "path": "com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api",
+    "host": "https://dl.google.com/dl/android/maven2",
+    "type": "jar",
+    "pom": {
+      "sha1": "7d636f89a401a7603740ef05ac87f5a1e2811efe",
+      "sha256": "0xc5zmf6125cpdb4144mblznjs16q4k5z4jpjbbs3g4ads2z6qkw"
+    },
+    "jar": {
+      "sha1": "47f6c56527c42425742fa9b56ffd3fd80763fe03",
+      "sha256": "0h2p4b7900j3girbkayq6b92pfw283rqnn74p4nlqlqwbv8a7r2d"
+    }
+  },
+
+  {
     "path": "com/android/tools/common/27.1.3/common-27.1.3",
     "host": "https://dl.google.com/dl/android/maven2",
     "type": "jar",
@@ -2869,7 +2883,7 @@
 
   {
     "path": "aopalliance/aopalliance/1.0/aopalliance-1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5128a2b0efbba460a1178d07773618e0986ea152",
@@ -2883,7 +2897,7 @@
 
   {
     "path": "backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "24aa8f29c14d1c63225caa6ad5328f1f7a2497a8",
@@ -2897,7 +2911,7 @@
 
   {
     "path": "cglib/cglib-parent/3.2.8/cglib-parent-3.2.8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5c1ecba3f5c474b2135fa6bb183c5ccaf8b14fa6",
@@ -2907,7 +2921,7 @@
 
   {
     "path": "cglib/cglib-parent/3.3.0/cglib-parent-3.3.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "dd05810b0333a1b6c80ee82fca276b95e573a013",
@@ -2917,7 +2931,7 @@
 
   {
     "path": "cglib/cglib/3.2.8/cglib-3.2.8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "171a736c85313866b75ae7b8644ebf21064ab4aa",
@@ -2931,7 +2945,7 @@
 
   {
     "path": "cglib/cglib/3.3.0/cglib-3.3.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e6b82e37edf3d2709f59e92f6752a929f72076c5",
@@ -2945,7 +2959,7 @@
 
   {
     "path": "classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8c8ad6a96a8c1168f8b12ec8a227b8261b160b26",
@@ -2959,7 +2973,7 @@
 
   {
     "path": "commons-codec/commons-codec/1.2/commons-codec-1.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3924208ea1e84feb88701e9a5000bc65c66fb335",
@@ -2973,7 +2987,7 @@
 
   {
     "path": "commons-codec/commons-codec/1.10/commons-codec-1.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "44b9477418d2942d45550f7e7c66c16262062d0e",
@@ -2987,7 +3001,7 @@
 
   {
     "path": "commons-codec/commons-codec/1.15/commons-codec-1.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c08f2dcdbba1a9466f3f9fa05e669fd61c3a47b7",
@@ -3001,7 +3015,7 @@
 
   {
     "path": "commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7e64d764d7f7ebc75ae3920490fcb58fbaf504a8",
@@ -3015,7 +3029,7 @@
 
   {
     "path": "commons-io/commons-io/2.4/commons-io-2.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9ece23effe8bce3904f3797a76b1ba6ab681e1b9",
@@ -3029,7 +3043,7 @@
 
   {
     "path": "commons-io/commons-io/2.6/commons-io-2.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5060835593e5b6ed18c82fc2e782f0a3c30a00b1",
@@ -3043,7 +3057,7 @@
 
   {
     "path": "commons-io/commons-io/2.11.0/commons-io-2.11.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3fe5d6ebed1afb72c3e8c166dba0b0e00fdd1f16",
@@ -3057,7 +3071,7 @@
 
   {
     "path": "commons-logging/commons-logging/1.0.4/commons-logging-1.0.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7d32e7520b801cabc3dc704d2afe59d020d00c45",
@@ -3071,7 +3085,7 @@
 
   {
     "path": "commons-logging/commons-logging/1.2/commons-logging-1.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "075c03ba4b01932842a996ef8d3fc1ab61ddeac2",
@@ -3085,7 +3099,7 @@
 
   {
     "path": "com/almworks/sqlite4java/sqlite4java/0.282/sqlite4java-0.282",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d1cd3a5ecbaa6838495edb3ddd02768663075ea9",
@@ -3098,22 +3112,8 @@
   },
 
   {
-    "path": "com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api",
-    "host": "https://repo.maven.apache.org/maven2",
-    "type": "jar",
-    "pom": {
-      "sha1": "d2a89c5569f53a8c8adfe599ede88cb6f38a8a6e",
-      "sha256": "1sr2ksrjzr9gv0y70w17l97x9a2anlv63lx7n803lgvxf2gig7fl"
-    },
-    "jar": {
-      "sha1": "085bee1acea9e27152b920746c68133b30b11431",
-      "sha256": "16nfz9w0zpbbb0ghsab3gfp53imkr4d3gvhlgaz1m7v7w4d1bd78"
-    }
-  },
-
-  {
     "path": "com/fasterxml/jackson/core/jackson-annotations/2.12.2/jackson-annotations-2.12.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3ff5e5d2607d4a51baf96515758e0d4ab2e5b2e8",
@@ -3127,7 +3127,7 @@
 
   {
     "path": "com/fasterxml/jackson/core/jackson-annotations/2.13.0-rc2/jackson-annotations-2.13.0-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "12567d90c9be9c838c2e6467a282b48eb7645c58",
@@ -3141,7 +3141,7 @@
 
   {
     "path": "com/fasterxml/jackson/core/jackson-core/2.12.2/jackson-core-2.12.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b66801012b2fb378271e177310322709aece934c",
@@ -3155,7 +3155,7 @@
 
   {
     "path": "com/fasterxml/jackson/core/jackson-core/2.13.0-rc2/jackson-core-2.13.0-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b7ebfe0195f1d0ae0226967413114e0541a0f2de",
@@ -3169,7 +3169,7 @@
 
   {
     "path": "com/fasterxml/jackson/core/jackson-databind/2.12.2/jackson-databind-2.12.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5369131c5638188be22c8b7e533118fd9098a8f6",
@@ -3183,7 +3183,7 @@
 
   {
     "path": "com/fasterxml/jackson/jackson-base/2.12.2/jackson-base-2.12.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "84e80184757cf2964e7711dc3f194174677dde27",
@@ -3193,7 +3193,7 @@
 
   {
     "path": "com/fasterxml/jackson/jackson-base/2.13.0-rc2/jackson-base-2.13.0-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "442982441d4900d340f180b6901081d9c958b9e3",
@@ -3203,7 +3203,7 @@
 
   {
     "path": "com/fasterxml/jackson/jackson-bom/2.12.2/jackson-bom-2.12.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "756ba398c754fd6fcf37ee56446417ca2d431fec",
@@ -3213,7 +3213,7 @@
 
   {
     "path": "com/fasterxml/jackson/jackson-bom/2.13.0-rc2/jackson-bom-2.13.0-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8e9ae128e0f309e2dc2c061501172d3e10bbfe4a",
@@ -3223,7 +3223,7 @@
 
   {
     "path": "com/fasterxml/jackson/jackson-parent/2.12/jackson-parent-2.12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "7675e7641142bc3c583fc3bf2e30ec9cba076ad9",
@@ -3233,7 +3233,7 @@
 
   {
     "path": "com/fasterxml/jackson/jackson-parent/2.13-rc2/jackson-parent-2.13-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2b5a94c27ac77ea0f4079b96d5781b9bc1f719d0",
@@ -3243,7 +3243,7 @@
 
   {
     "path": "com/fasterxml/oss-parent/41/oss-parent-41",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2b66e40e928eb5f2f9c1c0da54e3c26f6310cbfa",
@@ -3253,7 +3253,7 @@
 
   {
     "path": "com/fasterxml/oss-parent/43/oss-parent-43",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "b07427a553422225d489ca19fd3fcdc38c02aa16",
@@ -3263,7 +3263,7 @@
 
   {
     "path": "com/github/ajalt/clikt/2.2.0/clikt-2.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a535bb98edcef778e065a495572f1b85e0a34d79",
@@ -3277,7 +3277,7 @@
 
   {
     "path": "com/github/bumptech/glide/annotations/4.11.0/annotations-4.11.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "08445189d31e761a6006cde3bb72542a7a6a23dc",
@@ -3291,7 +3291,7 @@
 
   {
     "path": "com/github/bumptech/glide/compiler/4.11.0/compiler-4.11.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "63ca5a3bb1eb0c1ef5d3fbde26a794d2a22170ff",
@@ -3305,7 +3305,7 @@
 
   {
     "path": "com/github/bumptech/glide/disklrucache/4.11.0/disklrucache-4.11.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "947bbfe64d4645c07ab022daf20030a8bd2d05d0",
@@ -3319,7 +3319,7 @@
 
   {
     "path": "com/github/bumptech/glide/gifdecoder/4.11.0/gifdecoder-4.11.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fa549921eb02e2eedc4a96a54b1d71d951b6a982",
@@ -3333,7 +3333,7 @@
 
   {
     "path": "com/github/bumptech/glide/glide/4.11.0/glide-4.11.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "86a47dbf0e23ff171c04ede1d34f61a0d6577f44",
@@ -3347,7 +3347,7 @@
 
   {
     "path": "com/googlecode/json-simple/json-simple/1.1/json-simple-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a2c3a73d894b86ac979b88be6537b284eb4bf916",
@@ -3361,7 +3361,7 @@
 
   {
     "path": "com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "be6da8320adedafc712d645ddaaad00357b55408",
@@ -3375,7 +3375,7 @@
 
   {
     "path": "com/google/android/apps/common/testing/accessibility/framework/accessibility-test-framework/2.0/accessibility-test-framework-2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d3a5c5576057756f847f36d6581620b364522693",
@@ -3389,7 +3389,7 @@
 
   {
     "path": "com/google/android/apps/common/testing/accessibility/framework/accessibility-test-framework/2.1/accessibility-test-framework-2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "869c04f90606d7b53a5f39396148ddd19f44c533",
@@ -3403,7 +3403,7 @@
 
   {
     "path": "com/google/auto/auto-common/0.8/auto-common-0.8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "11c7c2185f910f49b7e167a80be6d4ecb5e9b6e8",
@@ -3417,7 +3417,7 @@
 
   {
     "path": "com/google/auto/auto-parent/3/auto-parent-3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8e22bd67b5aeb5f03fd50efd5910ba6dfb7f4c86",
@@ -3427,7 +3427,7 @@
 
   {
     "path": "com/google/auto/auto-parent/5/auto-parent-5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "794503331658b627d3a9e48d7ca303a56616d72a",
@@ -3437,7 +3437,7 @@
 
   {
     "path": "com/google/auto/auto-parent/6/auto-parent-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "0f29db646babbca0049636b6724613035bbcedff",
@@ -3447,7 +3447,7 @@
 
   {
     "path": "com/google/auto/service/auto-service/1.0-rc4/auto-service-1.0-rc4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3ea511fa7efea4b46a8161c414fe2aab9abaf8cf",
@@ -3461,7 +3461,7 @@
 
   {
     "path": "com/google/auto/value/auto-value-annotations/1.6.2/auto-value-annotations-1.6.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ae1ff98291be961d9e1b14eb26bedaf0b5ac9d15",
@@ -3475,7 +3475,7 @@
 
   {
     "path": "com/google/auto/value/auto-value-annotations/1.8.2/auto-value-annotations-1.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b50f6be2fc88ebdf201fe89c871e2c0d4d96cf95",
@@ -3489,7 +3489,7 @@
 
   {
     "path": "com/google/auto/value/auto-value-parent/1.6.2/auto-value-parent-1.6.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5eb0685cabce285064a62a7b9c6c256343a58285",
@@ -3499,7 +3499,7 @@
 
   {
     "path": "com/google/auto/value/auto-value-parent/1.8.2/auto-value-parent-1.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c86ec2e16ac581366a70e4739125a43b133210fb",
@@ -3509,7 +3509,7 @@
 
   {
     "path": "com/google/code/findbugs/annotations/3.0.1/annotations-3.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bb34942a7b098c0e32868e0587ccad57ba218708",
@@ -3523,7 +3523,7 @@
 
   {
     "path": "com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "67ea333a3244bc20a17d6f0c29498071dfa409fc",
@@ -3537,7 +3537,7 @@
 
   {
     "path": "com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "95efa8cea662452bb74b34abe09a93ff47625c8f",
@@ -3551,7 +3551,7 @@
 
   {
     "path": "com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d04690f71f3393e23f30998d9534365274fa5f9f",
@@ -3565,7 +3565,7 @@
 
   {
     "path": "com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8d93cdf4d84d7e1de736df607945c6df0730a10f",
@@ -3579,7 +3579,7 @@
 
   {
     "path": "com/google/code/gson/gson-parent/2.7/gson-parent-2.7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "3e147803ee87007ec82a1f625a0034be35c9b8a8",
@@ -3589,7 +3589,7 @@
 
   {
     "path": "com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "df4e302623519c6b801aee5281bada262b9ed876",
@@ -3599,7 +3599,7 @@
 
   {
     "path": "com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "40f295fd74fbe91f1589481c967b14f176d6e549",
@@ -3609,7 +3609,7 @@
 
   {
     "path": "com/google/code/gson/gson/2.7/gson-2.7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "09f9e39f9b791aeb73ba428ad30872f1a703edb3",
@@ -3623,7 +3623,7 @@
 
   {
     "path": "com/google/code/gson/gson/2.8.0/gson-2.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "36e74e4b4e2a699b4dc43e722cd0ad436f6b21fd",
@@ -3637,7 +3637,7 @@
 
   {
     "path": "com/google/code/gson/gson/2.8.5/gson-2.8.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2c18fa1082aa1c422aece88244c084be50c76500",
@@ -3651,7 +3651,7 @@
 
   {
     "path": "com/google/collections/google-collections/1.0-rc2/google-collections-1.0-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "12439110d9b939bc0be0d6b02ab7dd8662275858",
@@ -3665,7 +3665,7 @@
 
   {
     "path": "com/google/crypto/tink/tink/1.3.0-rc2/tink-1.3.0-rc2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5a666d168e1b821be33321a858f90baa5ab4b6cc",
@@ -3679,7 +3679,7 @@
 
   {
     "path": "com/google/dagger/dagger-compiler/2.24/dagger-compiler-2.24",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bfae5aae353152893341fdbed95e355703761610",
@@ -3693,7 +3693,7 @@
 
   {
     "path": "com/google/dagger/dagger-compiler/2.33/dagger-compiler-2.33",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "597e223816b94c982f9a672053d6ad253020ed14",
@@ -3707,7 +3707,7 @@
 
   {
     "path": "com/google/dagger/dagger-producers/2.24/dagger-producers-2.24",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0e32240db1c1f894009a49c85098edcbea111b48",
@@ -3721,7 +3721,7 @@
 
   {
     "path": "com/google/dagger/dagger-producers/2.33/dagger-producers-2.33",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6f307ca487aa8e0466a710c29c8d37112fac86d8",
@@ -3735,7 +3735,7 @@
 
   {
     "path": "com/google/dagger/dagger-spi/2.24/dagger-spi-2.24",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9aa6a875211ab333163d0af7caea01a104662762",
@@ -3749,7 +3749,7 @@
 
   {
     "path": "com/google/dagger/dagger-spi/2.33/dagger-spi-2.33",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2dd0c034cfbdbf2d07fd0bc67e5703dec1bf6f91",
@@ -3763,7 +3763,7 @@
 
   {
     "path": "com/google/dagger/dagger/2.24/dagger-2.24",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0161475a0e34bc67cb5343d97dbcba71fbbf4645",
@@ -3777,7 +3777,7 @@
 
   {
     "path": "com/google/dagger/dagger/2.33/dagger-2.33",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2662398a04997a6b88888c9a6a3851d2a8ba620a",
@@ -3791,7 +3791,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e28b5b546020f18ea29e2b4756023f53ee91492b",
@@ -3805,7 +3805,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "19c878e6870c8382864dcc459de1c6bfe7f36e54",
@@ -3819,7 +3819,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f9aadf833282cfd743aa5d330f927489ca9c8734",
@@ -3833,7 +3833,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_annotations/2.9.0/error_prone_annotations-2.9.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ffe29062ff5242287b65c16ec45e6a65bb946231",
@@ -3847,7 +3847,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_parent/2.2.0/error_prone_parent-2.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "72e2f31cb1952eada003d2ba7e82874cfe4b738c",
@@ -3857,7 +3857,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_parent/2.3.1/error_prone_parent-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a32c199defa0dcf9c42a32c26fec4d1fbb408e58",
@@ -3867,7 +3867,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_parent/2.3.2/error_prone_parent-2.3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "ea30b94538922c99fb231a2c9859790831eb0fb0",
@@ -3877,7 +3877,7 @@
 
   {
     "path": "com/google/errorprone/error_prone_parent/2.9.0/error_prone_parent-2.9.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a4f56c023d5284d3161dac51af134af6856e1fe9",
@@ -3887,7 +3887,7 @@
 
   {
     "path": "com/google/errorprone/javac-shaded/9-dev-r4023-3/javac-shaded-9-dev-r4023-3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b3d5ccc3fff88a9f032b00c68372475d5875e7bc",
@@ -3901,7 +3901,7 @@
 
   {
     "path": "com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f93bdcc0b38ffbec623e6610e0cddacae758cb54",
@@ -3915,7 +3915,7 @@
 
   {
     "path": "com/google/googlejavaformat/google-java-format-parent/1.5/google-java-format-parent-1.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f4af62b0c1e9504c1f6a7b9f0ec5e2f92f8af2f7",
@@ -3925,7 +3925,7 @@
 
   {
     "path": "com/google/googlejavaformat/google-java-format/1.5/google-java-format-1.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cc2e4159240454885e348be497964eb6088ec2be",
@@ -3939,7 +3939,7 @@
 
   {
     "path": "com/google/google/1/google-1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c35a5268151b7a1bbb77f7ee94a950f00e32db61",
@@ -3949,7 +3949,7 @@
 
   {
     "path": "com/google/google/5/google-5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d94d040e8ce2ae7ff75945227e262e369445f736",
@@ -3959,7 +3959,7 @@
 
   {
     "path": "com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e8160e78fdaaf7088621dc1649d9dd2dfcf8d0e8",
@@ -3973,7 +3973,7 @@
 
   {
     "path": "com/google/guava/guava-parent/23.0/guava-parent-23.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "79d7a4be1ccf3691ee279c5ee165385b7132f71c",
@@ -3983,7 +3983,7 @@
 
   {
     "path": "com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a2c0df489614352b7e8e503e274bd1dee5c42a64",
@@ -3993,7 +3993,7 @@
 
   {
     "path": "com/google/guava/guava-parent/27.0.1-jre/guava-parent-27.0.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8f7a96c144da567471d3d763a240c25ba374ebb1",
@@ -4003,7 +4003,7 @@
 
   {
     "path": "com/google/guava/guava-parent/27.1-jre/guava-parent-27.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a4686474dcba0d75d89e3d4f9665634832e49b6f",
@@ -4013,7 +4013,7 @@
 
   {
     "path": "com/google/guava/guava-parent/28.1-jre/guava-parent-28.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "cf90295394521cc63bf7cfdd4b81236531ccefdb",
@@ -4023,7 +4023,7 @@
 
   {
     "path": "com/google/guava/guava-parent/30.1.1-jre/guava-parent-30.1.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "3d726f4e77f9b282e3b99bb1d62713a44cab3118",
@@ -4033,7 +4033,7 @@
 
   {
     "path": "com/google/guava/guava-testlib/30.1.1-jre/guava-testlib-30.1.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "718328d28bf5dcae3d414e2a862d6e594e2fb704",
@@ -4047,7 +4047,7 @@
 
   {
     "path": "com/google/guava/guava/23.0/guava-23.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "05ce65d93433db6ef45746bcfbcef6656698851f",
@@ -4061,7 +4061,7 @@
 
   {
     "path": "com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a6ccf3af1d34509e5fb1f5bff675b9ae707ad628",
@@ -4075,7 +4075,7 @@
 
   {
     "path": "com/google/guava/guava/27.1-jre/guava-27.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "db536f4a1c26739eb6ee1cfb707ec3fbe8325c86",
@@ -4089,7 +4089,7 @@
 
   {
     "path": "com/google/guava/guava/28.1-jre/guava-28.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1207be0906dcc3e4984e8daa60b389e2ebd0a7cd",
@@ -4103,7 +4103,7 @@
 
   {
     "path": "com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0f55555f43cb33c8c2f911e962ae5e4bc2f522b0",
@@ -4117,7 +4117,7 @@
 
   {
     "path": "com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1b77ba79f9b2b7dfd4e15ea7bb0d568d5eb9cb8d",
@@ -4131,7 +4131,7 @@
 
   {
     "path": "com/google/inject/guice-parent/5.0.1/guice-parent-5.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2d595b125a44409f33a9ba695098a605629f28b2",
@@ -4141,7 +4141,7 @@
 
   {
     "path": "com/google/inject/guice/5.0.1/guice-5.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bc99e646708a723333457ab85b9dbabd04cc5f72",
@@ -4155,7 +4155,7 @@
 
   {
     "path": "com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b964a9414771661bdf35a3f10692a2fb0dd2c866",
@@ -4169,7 +4169,7 @@
 
   {
     "path": "com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "47e0dd93285dcc6b33181713bc7e8aed66742964",
@@ -4183,7 +4183,7 @@
 
   {
     "path": "com/google/jimfs/jimfs-parent/1.1/jimfs-parent-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2283f99a6aa73205190a20cfd35078e9f7d6cec9",
@@ -4193,7 +4193,7 @@
 
   {
     "path": "com/google/jimfs/jimfs/1.1/jimfs-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "380866e1e495f899631b6e1d437e4b0a69e4faa3",
@@ -4207,7 +4207,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-bom/3.10.0/protobuf-bom-3.10.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "4414dc69051a62cfdc674d840525f94f8979f408",
@@ -4217,7 +4217,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-bom/4.0.0-rc-2/protobuf-bom-4.0.0-rc-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1cf14b7774313bc34805dd58fffa3cbc35601184",
@@ -4227,7 +4227,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-java-util/3.4.0/protobuf-java-util-3.4.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "72b93eb17c1d5337ec0f4497313a14b315b9e76c",
@@ -4241,7 +4241,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-java-util/3.10.0/protobuf-java-util-3.10.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "dd9dbd5ae7e5c6978bb725c387aaeb2dc07dfddb",
@@ -4255,7 +4255,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fb4cc1a39c49d7c99a28a5a29bb35015c59f8886",
@@ -4269,7 +4269,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "100272b91d96ed5b41df4bb11ba543140c36bd30",
@@ -4283,7 +4283,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-java/3.10.0/protobuf-java-3.10.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "db94f4481e9ef506c7dfdbb0d059892aa283ab1a",
@@ -4297,7 +4297,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-java/4.0.0-rc-2/protobuf-java-4.0.0-rc-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8fab0fe0746b1d370663a3db7dd483c2c4d34a6f",
@@ -4311,7 +4311,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-parent/3.4.0/protobuf-parent-3.4.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5d9f2b22310a535c4597b4ed3691e000221b3a17",
@@ -4321,7 +4321,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-parent/3.10.0/protobuf-parent-3.10.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "92e4373db52230866c0352b343e3f83f25812c77",
@@ -4331,7 +4331,7 @@
 
   {
     "path": "com/google/protobuf/protobuf-parent/4.0.0-rc-2/protobuf-parent-4.0.0-rc-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c5391c7917ca1197cbbda4efc6454a87e7e7107e",
@@ -4341,7 +4341,7 @@
 
   {
     "path": "com/google/truth/truth-parent/1.1.3/truth-parent-1.1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c6d1b2aae7ea915ea285d6224914087775782f3c",
@@ -4351,7 +4351,7 @@
 
   {
     "path": "com/google/truth/truth/1.1.3/truth-1.1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8cc9b5eacd0afba4d4914cb222c587811f117651",
@@ -4365,7 +4365,7 @@
 
   {
     "path": "com/google/zxing/core/3.3.3/core-3.3.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3fc07a37b124d3f9e134854b4c7bf7dc120bcae7",
@@ -4379,7 +4379,7 @@
 
   {
     "path": "com/google/zxing/zxing-parent/3.3.3/zxing-parent-3.3.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "04a296fa43c718f9c67efccf4201b6c08f9cbea7",
@@ -4389,7 +4389,7 @@
 
   {
     "path": "com/h2database/h2/1.4.192/h2-1.4.192",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ed80ac43b67569f36e123190245e1e53dffc612e",
@@ -4403,7 +4403,7 @@
 
   {
     "path": "com/ibm/icu/icu4j/53.1/icu4j-53.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d13d24dbfb9d48175ebf4fae9cd7d5b7c5937f64",
@@ -4417,7 +4417,7 @@
 
   {
     "path": "com/rometools/rome-parent/1.15.0/rome-parent-1.15.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "ed4f010f86f6b82b0a03afbacf777c7233d092c3",
@@ -4427,7 +4427,7 @@
 
   {
     "path": "com/rometools/rome-parent/1.16.0/rome-parent-1.16.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "dac57c5d5897432607bcffa370b300635c81e6ca",
@@ -4437,7 +4437,7 @@
 
   {
     "path": "com/rometools/rome-utils/1.15.0/rome-utils-1.15.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c428157e630538c1460d2d19cfb80a89d14d9b40",
@@ -4451,7 +4451,7 @@
 
   {
     "path": "com/rometools/rome-utils/1.16.0/rome-utils-1.16.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "086f372b9625422a86c042eaa27c48f5bb97ad76",
@@ -4465,7 +4465,7 @@
 
   {
     "path": "com/rometools/rome/1.15.0/rome-1.15.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "781698e734f71aece9fc2c7079b955412f842dd9",
@@ -4479,7 +4479,7 @@
 
   {
     "path": "com/squareup/javapoet/1.10.0/javapoet-1.10.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "111612d623e9d2047798f13324fcb29966f080e3",
@@ -4493,7 +4493,7 @@
 
   {
     "path": "com/squareup/javapoet/1.11.1/javapoet-1.11.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "15c7f9f9ca52aed51640ddf813d80e7809b820df",
@@ -4507,7 +4507,7 @@
 
   {
     "path": "com/squareup/javapoet/1.13.0/javapoet-1.13.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "17b682b96d0d2abfdd92f6a99fbab40dd4f4d360",
@@ -4521,7 +4521,7 @@
 
   {
     "path": "com/squareup/javawriter/2.1.1/javawriter-2.1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "96cec80cd5523edeb350e3aaede11430cef7be55",
@@ -4535,7 +4535,7 @@
 
   {
     "path": "com/squareup/javawriter/2.5.0/javawriter-2.5.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d932f2476f65ecd95dcd6fd8c568b3f466f6a482",
@@ -4549,7 +4549,7 @@
 
   {
     "path": "com/squareup/okhttp3/okhttp/3.12.13/okhttp-3.12.13",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "102f0d3fbdbe99fd875e4c1332b5181563a80c0a",
@@ -4563,7 +4563,7 @@
 
   {
     "path": "com/squareup/okhttp3/parent/3.12.13/parent-3.12.13",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "29c1ff61f2ea42aec588cba9ea5fad8d7b9b76f1",
@@ -4573,7 +4573,7 @@
 
   {
     "path": "com/squareup/okio/okio-parent/1.15.0/okio-parent-1.15.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5eb9d8103fd3e21923bcf157066957337d6ca71e",
@@ -4583,7 +4583,7 @@
 
   {
     "path": "com/squareup/okio/okio/1.15.0/okio-1.15.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "87f1520a39a954a9aa185c7fe8f144fa7d597690",
@@ -4597,7 +4597,7 @@
 
   {
     "path": "com/squareup/okio/okio/3.0.0-alpha.10/okio-3.0.0-alpha.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5e8792b318a95e32e3898534e34aa4c78a3fbde3",
@@ -4611,7 +4611,7 @@
 
   {
     "path": "com/sun/activation/all/1.2.0/all-1.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "9b1023e38195ea19d1a0ac79192d486da1904f97",
@@ -4621,7 +4621,7 @@
 
   {
     "path": "com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bdb776ae9b888b7ad8f9f424b9e67837eae916c5",
@@ -4635,7 +4635,7 @@
 
   {
     "path": "com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8eb4c6b0e9b0a1fadf53fce8b3fc8415b00469ef",
@@ -4649,7 +4649,7 @@
 
   {
     "path": "com/sun/istack/istack-commons-runtime/4.1.0-M1/istack-commons-runtime-4.1.0-M1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "56beadc8553b987c0501804b77ca4cacde73c14e",
@@ -4663,7 +4663,7 @@
 
   {
     "path": "com/sun/istack/istack-commons/3.0.7/istack-commons-3.0.7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1d26fac59c5bbccf2666921ea76d24778b7df5dd",
@@ -4673,7 +4673,7 @@
 
   {
     "path": "com/sun/istack/istack-commons/4.1.0-M1/istack-commons-4.1.0-M1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "82af125fbeefab25f7aefaceaa11156a01323ce8",
@@ -4683,7 +4683,7 @@
 
   {
     "path": "com/sun/xml/bind/jaxb-bom-ext/2.3.1/jaxb-bom-ext-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1f45034ee74332e54404adc6a539307c879fad5f",
@@ -4693,7 +4693,7 @@
 
   {
     "path": "com/sun/xml/bind/jaxb-bom-ext/3.0.2/jaxb-bom-ext-3.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "546abdae08eea53fadc33675db0809ef597c41d5",
@@ -4703,7 +4703,7 @@
 
   {
     "path": "com/sun/xml/bind/mvn/jaxb-parent/2.3.1/jaxb-parent-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "7882377e82eb8f5c89164b71b49e8b7f33820b92",
@@ -4713,7 +4713,7 @@
 
   {
     "path": "com/sun/xml/bind/mvn/jaxb-parent/3.0.2/jaxb-parent-3.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2eecc62fba24c452765f8f2923b0b576758fd8b0",
@@ -4723,7 +4723,7 @@
 
   {
     "path": "com/sun/xml/bind/mvn/jaxb-runtime-parent/2.3.1/jaxb-runtime-parent-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "503a774712f50e6b6e6ffc76f6e73f51e9e2f889",
@@ -4733,7 +4733,7 @@
 
   {
     "path": "com/sun/xml/bind/mvn/jaxb-txw-parent/2.3.1/jaxb-txw-parent-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "dbac3b31b97442b12772e4ff1fbe00e903161e43",
@@ -4743,7 +4743,7 @@
 
   {
     "path": "com/sun/xml/bind/mvn/jaxb-txw-parent/3.0.2/jaxb-txw-parent-3.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d3a1d7c302af4dc2ee16cbf08a4c8a245eabfb8c",
@@ -4753,7 +4753,7 @@
 
   {
     "path": "com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "945cf1f4467c72add88309fb05cdf5e340b569f9",
@@ -4767,7 +4767,7 @@
 
   {
     "path": "com/sun/xml/fastinfoset/FastInfoset/2.0.0/FastInfoset-2.0.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b8a2b76957425901126b54e433583e099302b923",
@@ -4781,7 +4781,7 @@
 
   {
     "path": "com/sun/xml/fastinfoset/fastinfoset-project/1.2.15/fastinfoset-project-1.2.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a40c0d8a2f104dd9ae803f086014ed0c010ca5f7",
@@ -4791,7 +4791,7 @@
 
   {
     "path": "com/sun/xml/fastinfoset/fastinfoset-project/2.0.0/fastinfoset-project-2.0.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "4746c68d686a9b00a1874253201f16028f475542",
@@ -4801,7 +4801,7 @@
 
   {
     "path": "com/vanniktech/emoji-google/0.6.0/emoji-google-0.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "aar",
     "pom": {
       "sha1": "a3c873e30949f8872751a6c9d19fdc44272b4070",
@@ -4815,7 +4815,7 @@
 
   {
     "path": "com/vanniktech/emoji/0.6.0/emoji-0.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "aar",
     "pom": {
       "sha1": "40d7c1eedd966dbfc0a07a69a5c190bbebcca8bb",
@@ -4829,7 +4829,7 @@
 
   {
     "path": "de/hdodenhof/circleimageview/3.1.0/circleimageview-3.1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "aar",
     "pom": {
       "sha1": "de40367f4631cefae5559f57f40f9c973b4af3d4",
@@ -4843,7 +4843,7 @@
 
   {
     "path": "info/guardianproject/panic/panic/1.0/panic-1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a4148f6945b4d56e6ea6ba746d8206978012209d",
@@ -4857,7 +4857,7 @@
 
   {
     "path": "io/javalin/javalin/3.5.0/javalin-3.5.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "667baeb9c789693c6c6fd426d133dc51b21ed96d",
@@ -4871,7 +4871,7 @@
 
   {
     "path": "it/unimi/dsi/fastutil/7.2.0/fastutil-7.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e068a0be19991231f5020d2748e709325bb745f2",
@@ -4885,7 +4885,7 @@
 
   {
     "path": "jakarta/activation/jakarta.activation-api/2.1.0-RC1/jakarta.activation-api-2.1.0-RC1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d3db04941d1888e189153f3bf60eea872db58c3f",
@@ -4899,7 +4899,7 @@
 
   {
     "path": "javax/activation/activation/1.1/activation-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fd9dd0faa8f03f3ce0dc4eec22e57e818d8b9897",
@@ -4913,7 +4913,7 @@
 
   {
     "path": "javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1aa9ef58e50ba6868b2e955d61fcd73be5b4cea5",
@@ -4927,7 +4927,7 @@
 
   {
     "path": "javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d90e6c7f83898fe30f83aeaf4d411285f970a433",
@@ -4941,7 +4941,7 @@
 
   {
     "path": "javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "302fe96ef206b17f82893083b51b479541fa25ab",
@@ -4955,7 +4955,7 @@
 
   {
     "path": "javax/annotation/jsr250-api/1.0/jsr250-api-1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "828184cb963d953865b5941e416999e376b1c82a",
@@ -4969,7 +4969,7 @@
 
   {
     "path": "javax/el/javax.el-api/3.0.1-b06/javax.el-api-3.0.1-b06",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "db589ad802e1335a05db270f4362a3a0e93de053",
@@ -4983,7 +4983,7 @@
 
   {
     "path": "javax/enterprise/cdi-api/1.2/cdi-api-1.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b0239d3cc2f5a47533bb0be184830a9f90db984a",
@@ -4997,7 +4997,7 @@
 
   {
     "path": "javax/enterprise/cdi-api/2.0-PFD2/cdi-api-2.0-PFD2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0ca421f86b35852b3b138a9f7238ea5370aa9d02",
@@ -5011,7 +5011,7 @@
 
   {
     "path": "javax/inject/javax.inject/1/javax.inject-1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b8e00a8a0deb0ebef447570e37ff8146ccd92cbe",
@@ -5025,7 +5025,7 @@
 
   {
     "path": "javax/interceptor/javax.interceptor-api/1.2.2/javax.interceptor-api-1.2.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ece022af03fd87b5333b7ffd22b4c0dcfc7eb51b",
@@ -5039,7 +5039,7 @@
 
   {
     "path": "javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "330afdf2f976af1584c6a18333f4d53d264df1de",
@@ -5053,7 +5053,7 @@
 
   {
     "path": "javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0ba6fc9f9da2c136756c5536798cff7f72621518",
@@ -5067,7 +5067,7 @@
 
   {
     "path": "javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "26101e8a1a09e16cdf277a4591f6d29917b2e06e",
@@ -5077,7 +5077,7 @@
 
   {
     "path": "javax/xml/bind/jaxb-api-parent/2.4.0-b180830.0359/jaxb-api-parent-2.4.0-b180830.0359",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "0dba9e0dbd65de0095f5be19cf10bd838b11a4c6",
@@ -5087,7 +5087,7 @@
 
   {
     "path": "javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c42c51ae84892b73ef7de5351188908e673f5c69",
@@ -5101,7 +5101,7 @@
 
   {
     "path": "javax/xml/bind/jaxb-api/2.4.0-b180830.0359/jaxb-api-2.4.0-b180830.0359",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8094057c54ba7d482d78c7a5bfe2c9e316713808",
@@ -5115,7 +5115,7 @@
 
   {
     "path": "junit/junit/3.8.1/junit-3.8.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "16d74791c801c89b0071b1680ea0bc85c93417bb",
@@ -5129,7 +5129,7 @@
 
   {
     "path": "junit/junit/3.8.2/junit-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c735a15ca8fc2ea77db963c71ade153ffeb8212e",
@@ -5143,7 +5143,7 @@
 
   {
     "path": "junit/junit/4.12/junit-4.12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "35fb238baee3f3af739074d723279ebea2028398",
@@ -5157,7 +5157,7 @@
 
   {
     "path": "junit/junit/4.13.2/junit-4.13.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "73bc5be628edeb297a1caf421a5a2e494798b92f",
@@ -5171,7 +5171,7 @@
 
   {
     "path": "nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "51d188decc386fe998fa4ece85948c56e4c7d147",
@@ -5185,7 +5185,7 @@
 
   {
     "path": "nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c8845acd7305ffee4c76ef626026fb396cc33463",
@@ -5199,7 +5199,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy-agent/1.8.10/byte-buddy-agent-1.8.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e964e569a3ce7344bde661ae9941a69dcee3a432",
@@ -5213,7 +5213,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy-agent/1.10.20/byte-buddy-agent-1.10.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b2811786fe67376cfe6d22fc5fafc414e4047c37",
@@ -5227,7 +5227,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy-parent/1.8.10/byte-buddy-parent-1.8.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "9e1dab4a97e110f4ba5864b6f3f5f953d8711331",
@@ -5237,7 +5237,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy-parent/1.9.12/byte-buddy-parent-1.9.12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d1e70afa9f55ffa8b3bc25a72fb469187cfed215",
@@ -5247,7 +5247,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy-parent/1.10.20/byte-buddy-parent-1.10.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1e687477391fdd21ccee086256c883a18a0955af",
@@ -5257,7 +5257,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy-parent/1.11.15/byte-buddy-parent-1.11.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5821f483d25dd15a65858c7eb62758073d7b92a3",
@@ -5267,7 +5267,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy/1.8.10/byte-buddy-1.8.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8a421ccaebc6b48a26112fde1e45145357a81fbb",
@@ -5281,7 +5281,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fb4bc33d24ebc3d58a183ca429243d817b05940c",
@@ -5295,7 +5295,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy/1.10.20/byte-buddy-1.10.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1a5d21d496b0c74fbb759defed7a29db4bceb894",
@@ -5309,7 +5309,7 @@
 
   {
     "path": "net/bytebuddy/byte-buddy/1.11.15/byte-buddy-1.11.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0c0b2e12ea816d1b04abdf8caee7862e7d7a71cd",
@@ -5323,7 +5323,7 @@
 
   {
     "path": "net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d2905a940ee7c59e1636e1c3541069ccbbcdf227",
@@ -5337,7 +5337,7 @@
 
   {
     "path": "net/java/dev/jna/jna-platform/4.5.2/jna-platform-4.5.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1033a7c839398e895174a2d5d1ae2c677dc19440",
@@ -5351,7 +5351,7 @@
 
   {
     "path": "net/java/dev/jna/jna/4.5.2/jna-4.5.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "48815b09f664da78885b372b0f1a04a58e4277de",
@@ -5365,7 +5365,7 @@
 
   {
     "path": "net/java/jvnet-parent/1/jvnet-parent-1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "b55a1b046dbe82acdee8edde7476eebcba1e57d8",
@@ -5375,7 +5375,7 @@
 
   {
     "path": "net/java/jvnet-parent/3/jvnet-parent-3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f8f3be3e980551a39b5679411e171aeb6931aaec",
@@ -5385,7 +5385,7 @@
 
   {
     "path": "net/java/jvnet-parent/5/jvnet-parent-5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5343c954d21549d039feebe5fadef023cdfc1388",
@@ -5395,7 +5395,7 @@
 
   {
     "path": "net/jcip/jcip-annotations/1.0/jcip-annotations-1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "dc988441d471560e3dbcf7bea80d06fa6dc58003",
@@ -5409,7 +5409,7 @@
 
   {
     "path": "net/ltgt/gradle/incap/incap/0.2/incap-0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "31eb7a3f96dc655b77185ca2f6c8b39a8d9fedb3",
@@ -5423,7 +5423,7 @@
 
   {
     "path": "net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ea3cd0a93e4e8adc1cdadd544c9168bc5aa985a8",
@@ -5437,7 +5437,7 @@
 
   {
     "path": "net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8efa75f9cdc57687076b2125b1a098e6f42e737d",
@@ -5451,7 +5451,7 @@
 
   {
     "path": "net/sf/proguard/proguard-base/6.0.3/proguard-base-6.0.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d53b864b20f6ab75c66017adcb06c44a912a2076",
@@ -5465,7 +5465,7 @@
 
   {
     "path": "net/sf/proguard/proguard-base/6.3.0beta1/proguard-base-6.3.0beta1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6ec223be63e45327a5ec8fdd4620e25f6ce4c82a",
@@ -5479,7 +5479,7 @@
 
   {
     "path": "net/sf/proguard/proguard-gradle/6.0.3/proguard-gradle-6.0.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6583a613d9b6d02a699d4dd24d8b8825da3d8e8b",
@@ -5493,7 +5493,7 @@
 
   {
     "path": "net/sf/proguard/proguard-parent/6.0.3/proguard-parent-6.0.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f76c32555b227be8f5d8c753ccc7f49c5196345e",
@@ -5503,7 +5503,7 @@
 
   {
     "path": "net/sf/proguard/proguard-parent/6.3.0beta1/proguard-parent-6.3.0beta1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "6a0ab47c2c7ca00006ca9e69048beb25907daa31",
@@ -5513,7 +5513,7 @@
 
   {
     "path": "org/antlr/antlr4-master/4.5.3/antlr4-master-4.5.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c7e4123f86c15b492adba2fc5377949c4ea43946",
@@ -5523,7 +5523,7 @@
 
   {
     "path": "org/antlr/antlr4/4.5.3/antlr4-4.5.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9ecf07c69a057cb13cea8a153d242007f5cc8003",
@@ -5537,7 +5537,7 @@
 
   {
     "path": "org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ef6b86a126ae192d8639af6f5b3dbe5d4c6d7dde",
@@ -5551,7 +5551,7 @@
 
   {
     "path": "org/apache/ant/ant-launcher/1.8.0/ant-launcher-1.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "af709a27d5d18c230379cf6589ba321b77d2f54b",
@@ -5565,7 +5565,7 @@
 
   {
     "path": "org/apache/ant/ant-launcher/1.10.11/ant-launcher-1.10.11",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b7a6baf478827a41351061b89bde2fd23d0328f5",
@@ -5579,7 +5579,7 @@
 
   {
     "path": "org/apache/ant/ant-parent/1.8.0/ant-parent-1.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1e5b16f8d93be570dadae792fdc4d53d875b5eee",
@@ -5589,7 +5589,7 @@
 
   {
     "path": "org/apache/ant/ant-parent/1.10.11/ant-parent-1.10.11",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f5464a5be0dc72f4fb6b283d30c9daa76dd10e47",
@@ -5599,7 +5599,7 @@
 
   {
     "path": "org/apache/ant/ant/1.8.0/ant-1.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "908ce1c99f6c6f207cf30f508c7f50eb57f5d914",
@@ -5613,7 +5613,7 @@
 
   {
     "path": "org/apache/ant/ant/1.10.11/ant-1.10.11",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "72f702c7d8de0de614e2b93409146197157e1d63",
@@ -5627,7 +5627,7 @@
 
   {
     "path": "org/apache/apache/1/apache-1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8902526cc8e0fd0373c42c7f3ddc35560c26bf59",
@@ -5637,7 +5637,7 @@
 
   {
     "path": "org/apache/apache/3/apache-3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1bc0010136a890e2fd38d901a0b7ecdf0e3f9871",
@@ -5647,7 +5647,7 @@
 
   {
     "path": "org/apache/apache/4/apache-4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "602b647986c1d24301bc3d70e5923696bc7f1401",
@@ -5657,7 +5657,7 @@
 
   {
     "path": "org/apache/apache/5/apache-5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a99e211eb2be05af269c489b0f1abb9e8469fbca",
@@ -5667,7 +5667,7 @@
 
   {
     "path": "org/apache/apache/9/apache-9",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "de55d73a30c7521f3d55e8141d360ffbdfd88caa",
@@ -5677,7 +5677,7 @@
 
   {
     "path": "org/apache/apache/13/apache-13",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "15aff1faaec4963617f07dbe8e603f0adabc3a12",
@@ -5687,7 +5687,7 @@
 
   {
     "path": "org/apache/apache/15/apache-15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "95c70374817194cabfeec410fe70c3a6b832bafe",
@@ -5697,7 +5697,7 @@
 
   {
     "path": "org/apache/apache/16/apache-16",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8a90e31780e5cd0685ccaf25836c66e3b4e163b7",
@@ -5707,7 +5707,7 @@
 
   {
     "path": "org/apache/apache/18/apache-18",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "bd408bbea3840f2c7f914b29403e39a90f84fd5f",
@@ -5717,7 +5717,7 @@
 
   {
     "path": "org/apache/apache/19/apache-19",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "db8bb0231dcbda5011926dbaca1a7ce652fd5517",
@@ -5727,7 +5727,7 @@
 
   {
     "path": "org/apache/apache/21/apache-21",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "649b700a1b2b4a1d87e7ae8e3f47bfe101b2a4a5",
@@ -5737,7 +5737,7 @@
 
   {
     "path": "org/apache/apache/23/apache-23",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "0404949e96725e63a10a6d8f9d9b521948d170d5",
@@ -5747,7 +5747,7 @@
 
   {
     "path": "org/apache/commons/commons-compress/1.12/commons-compress-1.12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d4ba952b054eef846e7255cc3ac6d4ca76ead72c",
@@ -5761,7 +5761,7 @@
 
   {
     "path": "org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "59092f9d06947b986318dfbe297312e08379b0ae",
@@ -5775,7 +5775,7 @@
 
   {
     "path": "org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "302d01a9279f7a400b1e767be60f12c02a5cf513",
@@ -5789,7 +5789,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/25/commons-parent-25",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "67b84199ca4acf0d8fbc5256d90b80f746737e94",
@@ -5799,7 +5799,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/34/commons-parent-34",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1f6be162a806d8343e3cd238dd728558532473a5",
@@ -5809,7 +5809,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/35/commons-parent-35",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d88c24ebb385e5404f34573f24362b17434e3f33",
@@ -5819,7 +5819,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/39/commons-parent-39",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "4bc32d3cda9f07814c548492af7bf19b21798d46",
@@ -5829,7 +5829,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/42/commons-parent-42",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "35d45eda74fe511d3d60b68e1dac29ed55043354",
@@ -5839,7 +5839,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/47/commons-parent-47",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "391715f2f4f1b32604a201a2f4ea74a174e1f21c",
@@ -5849,7 +5849,7 @@
 
   {
     "path": "org/apache/commons/commons-parent/52/commons-parent-52",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "004ee86dedc66d0010ccdc29e5a4ce014c057854",
@@ -5859,7 +5859,7 @@
 
   {
     "path": "org/apache/geronimo/genesis/genesis-default-flava/2.3/genesis-default-flava-2.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "237557ea68d578b05f0565b99fb85c262b18f53c",
@@ -5869,7 +5869,7 @@
 
   {
     "path": "org/apache/geronimo/genesis/genesis-java8-flava/2.3/genesis-java8-flava-2.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "82d763ed11fd942ea553b8156f1ae7926dec4a0d",
@@ -5879,7 +5879,7 @@
 
   {
     "path": "org/apache/geronimo/genesis/genesis/2.3/genesis-2.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "11a496f4ce7520de65374ba362ae4e06b601d328",
@@ -5889,7 +5889,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "db40edda8b95d880d2a810560fd5e46eb4fa6909",
@@ -5903,7 +5903,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e5b134e5cd3e28dc431ca5397e9b53d28d1cfa74",
@@ -5917,7 +5917,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcomponents-client/4.5.6/httpcomponents-client-4.5.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "135a0a91d1ad2909b08196580ef2c363932bb87e",
@@ -5927,7 +5927,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcomponents-client/4.5.13/httpcomponents-client-4.5.13",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "61045e5bac5f6b0a7e3301053de0d78fc92f09db",
@@ -5937,7 +5937,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcomponents-core/4.4.10/httpcomponents-core-4.4.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "43dd1af3c408840fa4d19679da7db9c8dec9f7fa",
@@ -5947,7 +5947,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcomponents-core/4.4.14/httpcomponents-core-4.4.14",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "6dede7e95d51c365a10c346b010797c2656edc65",
@@ -5957,7 +5957,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcomponents-parent/10/httpcomponents-parent-10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1ba3c5940f24525444492ae12b6a1015df8a477b",
@@ -5967,7 +5967,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcomponents-parent/11/httpcomponents-parent-11",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "3ee7a841cc49326e8681089ea7ad6a3b81b88581",
@@ -5977,7 +5977,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cbbf1989463d9f3e284c1348e50ea8bf426e4e1c",
@@ -5991,7 +5991,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "16db7143a7586192ac1d863c7ecfaf25541bbc47",
@@ -6005,7 +6005,7 @@
 
   {
     "path": "org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b9dcad423fba1978379049cf0cf3cf535c667af7",
@@ -6019,7 +6019,7 @@
 
   {
     "path": "org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "81fe85dab517e3e3a08b6714e006b51f0d2b8ff3",
@@ -6033,7 +6033,7 @@
 
   {
     "path": "org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "062f05a1fc0a40a6ea8fc8f0a1e9e2c02057ebaf",
@@ -6047,7 +6047,7 @@
 
   {
     "path": "org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e37430ef3c3ee1d33817fdb45a0e538f49932c0a",
@@ -6061,7 +6061,7 @@
 
   {
     "path": "org/apache/maven/maven-artifact/3.8.2/maven-artifact-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fe1bfdcd3ef010fec2ec101b81aaf63b4b8c56b7",
@@ -6075,7 +6075,7 @@
 
   {
     "path": "org/apache/maven/maven-builder-support/3.8.2/maven-builder-support-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ac157abb09cc556a6f4ccaeeb58704ea9364c58b",
@@ -6089,7 +6089,7 @@
 
   {
     "path": "org/apache/maven/maven-compat/3.8.2/maven-compat-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c742d94dc7289e578effd448fe14bd481a9ddafb",
@@ -6103,7 +6103,7 @@
 
   {
     "path": "org/apache/maven/maven-core/3.8.2/maven-core-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a0b73057ef1bef8db73d6ed3ca0a3a3d04a2883f",
@@ -6117,7 +6117,7 @@
 
   {
     "path": "org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5074991d8d14a88e7c8bff294639a254d7ef387a",
@@ -6131,7 +6131,7 @@
 
   {
     "path": "org/apache/maven/maven-model-builder/3.8.2/maven-model-builder-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "75c4b841a7bc95bf92676b86be7f49971e1ac577",
@@ -6145,7 +6145,7 @@
 
   {
     "path": "org/apache/maven/maven-model/2.2.1/maven-model-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "548a7e6354c1bc4a49dbec6bd17b4f8e9310201b",
@@ -6159,7 +6159,7 @@
 
   {
     "path": "org/apache/maven/maven-model/3.8.2/maven-model-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "db995dae4a613ccd8c77f7b52764ce018e8288f4",
@@ -6173,7 +6173,7 @@
 
   {
     "path": "org/apache/maven/maven-parent/10/maven-parent-10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "281aafa31dfa9544070448ea8f353434f53267e4",
@@ -6183,7 +6183,7 @@
 
   {
     "path": "org/apache/maven/maven-parent/11/maven-parent-11",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "4bb80173fa4979737840fda012af86f5beabf1bc",
@@ -6193,7 +6193,7 @@
 
   {
     "path": "org/apache/maven/maven-parent/19/maven-parent-19",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "181554ae180245d7f653f77ff869790c2062f2d0",
@@ -6203,7 +6203,7 @@
 
   {
     "path": "org/apache/maven/maven-parent/34/maven-parent-34",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d03d96b2f4ee06300faa9731b0fa71feeec5a8ef",
@@ -6213,7 +6213,7 @@
 
   {
     "path": "org/apache/maven/maven-plugin-api/3.8.2/maven-plugin-api-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c03f0999311009b8e2e211aabff9c7bdc4a48f4b",
@@ -6227,7 +6227,7 @@
 
   {
     "path": "org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c3575ac9ad32638af33d88829453bdc902ea8711",
@@ -6241,7 +6241,7 @@
 
   {
     "path": "org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "075b47a5262cae02c228137399b8247e50a43284",
@@ -6255,7 +6255,7 @@
 
   {
     "path": "org/apache/maven/maven-project-builder/3.0-alpha-2/maven-project-builder-3.0-alpha-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6bb6db4d3d3cbd6200133ddcde5c7806e94fdba7",
@@ -6269,7 +6269,7 @@
 
   {
     "path": "org/apache/maven/maven-project/2.2.1/maven-project-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d96e4545b4700ac177430b5189c3f2aa54f62ca1",
@@ -6283,7 +6283,7 @@
 
   {
     "path": "org/apache/maven/maven-project/3.0-alpha-2/maven-project-3.0-alpha-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ebd99cf2f6a046c0d415e6a1e17317277a826816",
@@ -6297,7 +6297,7 @@
 
   {
     "path": "org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "415f88d96ea04b0fcef38c50123da1ccc2be49d2",
@@ -6311,7 +6311,7 @@
 
   {
     "path": "org/apache/maven/maven-repository-metadata/3.8.2/maven-repository-metadata-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d540ece2844686f281f55628f6e7cc9a8b096c06",
@@ -6325,7 +6325,7 @@
 
   {
     "path": "org/apache/maven/maven-resolver-provider/3.8.2/maven-resolver-provider-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bf7f341b31b4e5db929b25ce09c3b23436d86d0d",
@@ -6339,7 +6339,7 @@
 
   {
     "path": "org/apache/maven/maven-settings-builder/3.8.2/maven-settings-builder-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f8f68c43ee5dfa09939d1dfebf4e68dba685f741",
@@ -6353,7 +6353,7 @@
 
   {
     "path": "org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d54135b84370b3b0b70d84ffbb4ddf161c303d56",
@@ -6367,7 +6367,7 @@
 
   {
     "path": "org/apache/maven/maven-settings/3.8.2/maven-settings-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a1fad7809fa985aa113c73b4511dc2f005d8f385",
@@ -6381,7 +6381,7 @@
 
   {
     "path": "org/apache/maven/maven/2.2.1/maven-2.2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "7bc311044fbacb404de025b76feefa3567f0e5d7",
@@ -6391,7 +6391,7 @@
 
   {
     "path": "org/apache/maven/maven/3.0-alpha-2/maven-3.0-alpha-2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "17597204fa17b4d241c64685a219b901951d549c",
@@ -6401,7 +6401,7 @@
 
   {
     "path": "org/apache/maven/maven/3.8.2/maven-3.8.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "40d06c40604b9cb406e5641ff2793cc34ba9b332",
@@ -6411,7 +6411,7 @@
 
   {
     "path": "org/apache/maven/resolver/maven-resolver-api/1.7.2/maven-resolver-api-1.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a518793189626f604549b70e63ec5cbe54ff8f1c",
@@ -6425,7 +6425,7 @@
 
   {
     "path": "org/apache/maven/resolver/maven-resolver-impl/1.7.2/maven-resolver-impl-1.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8345967757fed70e6ca9b8a39e709cccfc94e493",
@@ -6439,7 +6439,7 @@
 
   {
     "path": "org/apache/maven/resolver/maven-resolver-named-locks/1.7.2/maven-resolver-named-locks-1.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8e643fac39a4fba3496949da3bccdc7bd401fe24",
@@ -6453,7 +6453,7 @@
 
   {
     "path": "org/apache/maven/resolver/maven-resolver-spi/1.7.2/maven-resolver-spi-1.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "32e3115ceea5200d48a89430aac25b229a1ad0cd",
@@ -6467,7 +6467,7 @@
 
   {
     "path": "org/apache/maven/resolver/maven-resolver-util/1.7.2/maven-resolver-util-1.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9532d91f54ed8acb47bb2cca8fb5527842f02bcd",
@@ -6481,7 +6481,7 @@
 
   {
     "path": "org/apache/maven/resolver/maven-resolver/1.7.2/maven-resolver-1.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f56e518fccdf76f9eb448f54a5e7dff048366485",
@@ -6491,7 +6491,7 @@
 
   {
     "path": "org/apache/maven/shared/maven-shared-components/34/maven-shared-components-34",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "633600d0ac8d18b70b559a90fa62ad4e90e8dc15",
@@ -6501,7 +6501,7 @@
 
   {
     "path": "org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9e3c134dc5c3f2a588203ce1cd137b7c3c51c642",
@@ -6515,7 +6515,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "80898b6c33959b0775bd9fa082ab9d8199d03af6",
@@ -6529,7 +6529,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-file/3.4.3/wagon-file-3.4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a8443d4abc414d39e32901fc282a7675a4a02a56",
@@ -6543,7 +6543,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0bf29be27632db42d742aa13fbffe0ec20088f76",
@@ -6557,7 +6557,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-http-lightweight/3.4.3/wagon-http-lightweight-3.4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e18f659e99cb073eff77905cf3b1d75806b8b768",
@@ -6571,7 +6571,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b19a35b37860ec29ca2f73044bf9a9f289e74cb0",
@@ -6585,7 +6585,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-http-shared/3.4.3/wagon-http-shared-3.4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0f570047ccedc8699c541d4d96a60d23d2fd183b",
@@ -6599,7 +6599,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "0874fb30d23af675da41407349b9fd99e513ae13",
@@ -6609,7 +6609,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-providers/3.4.3/wagon-providers-3.4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a129298f17315bd7186fab7db9e23df1616ec2db",
@@ -6619,7 +6619,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5dfdc8e497311085c9a1d6a634320b553442d281",
@@ -6633,7 +6633,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon-provider-api/3.4.3/wagon-provider-api-3.4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "03884cbddd9df7b964bd4ea491c4e053d69a8e63",
@@ -6647,7 +6647,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "0a5a7966afb1b64f97c2f3f23a3e80592dc94986",
@@ -6657,7 +6657,7 @@
 
   {
     "path": "org/apache/maven/wagon/wagon/3.4.3/wagon-3.4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c44c620da8ab8cc597cf940b4e347b4db19341a2",
@@ -6667,7 +6667,7 @@
 
   {
     "path": "org/apache/xbean/xbean-reflect/4.20/xbean-reflect-4.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "de47e4235bfa51ef0225f42fafb6cf5f1322be24",
@@ -6681,7 +6681,7 @@
 
   {
     "path": "org/apache/xbean/xbean/4.20/xbean-4.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e8c51acb16a46cc875a52bcb562cb94ce49c08d0",
@@ -6691,7 +6691,7 @@
 
   {
     "path": "org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ce9568cec632f7c99fb26d13c4d5c89517349f6b",
@@ -6705,7 +6705,7 @@
 
   {
     "path": "org/bitlet/weupnp/0.1.4/weupnp-0.1.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a2ef62dcc884dd2492cf6692cfdbe2158660a6cc",
@@ -6719,7 +6719,7 @@
 
   {
     "path": "org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2e2e47a19e0c53e7d204a6ad071c9e64c7c4c43f",
@@ -6733,7 +6733,7 @@
 
   {
     "path": "org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "dcdfe005f14e347c71729a1208ed55fbe5ca337a",
@@ -6747,7 +6747,7 @@
 
   {
     "path": "org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "16220ab4e1b41786b0396e908ed91437c620ee3c",
@@ -6761,7 +6761,7 @@
 
   {
     "path": "org/bouncycastle/bcprov-jdk15on/1.69/bcprov-jdk15on-1.69",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c9f3e7d46996214727e0df730b2a6214b49a0ac0",
@@ -6775,7 +6775,7 @@
 
   {
     "path": "org/briarproject/tor-android/0.3.5.15/tor-android-0.3.5.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "77797adad97eac1cc3408ed7fa7a1b4d3cb7e072",
@@ -6789,7 +6789,7 @@
 
   {
     "path": "org/briarproject/tor/0.3.5.15/tor-0.3.5.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8f38166507a3d164265870593762bb6d4b284504",
@@ -6803,7 +6803,7 @@
 
   {
     "path": "org/checkerframework/checker-compat-qual/2.5.3/checker-compat-qual-2.5.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cc075e163616b8284602e9fa9cadbd62b9c04374",
@@ -6817,7 +6817,7 @@
 
   {
     "path": "org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7cee753353b0fc94e0300ad3dbf155069260c4d7",
@@ -6831,7 +6831,7 @@
 
   {
     "path": "org/checkerframework/checker-qual/2.5.8/checker-qual-2.5.8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5eb0c9262e891ee4dfa3410b9be611e47c79779f",
@@ -6845,7 +6845,7 @@
 
   {
     "path": "org/checkerframework/checker-qual/2.8.1/checker-qual-2.8.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c7e7cde72ffc19ab0f453b6fcc184638a8f3bb11",
@@ -6859,7 +6859,7 @@
 
   {
     "path": "org/checkerframework/checker-qual/3.18.0/checker-qual-3.18.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ebf9e21b69f9e3b4e2596475f8d4cba93cd7b55d",
@@ -6873,7 +6873,7 @@
 
   {
     "path": "org/codehaus/groovy/groovy-all/2.4.15/groovy-all-2.4.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c67938b8f20e75a4c025b9519b78c138bd17a758",
@@ -6887,7 +6887,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "80948bd07c5db60753d8d5a9164b8b2272e0842a",
@@ -6901,7 +6901,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-annotations/1.18/animal-sniffer-annotations-1.18",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "82452242e8e2d0e058182cb01f29c3c30391dac3",
@@ -6915,7 +6915,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-annotations/1.20/animal-sniffer-annotations-1.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "4daa545f375cc4e539a97425fb75aa52f856d5e4",
@@ -6929,7 +6929,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-ant-tasks/1.20/animal-sniffer-ant-tasks-1.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ebbf7688ed2b8425f18835602621799309fbd460",
@@ -6943,7 +6943,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-parent/1.17/animal-sniffer-parent-1.17",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "eea4b805793494ebb025e5a9926ea3cf1ee8b34d",
@@ -6953,7 +6953,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-parent/1.18/animal-sniffer-parent-1.18",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "dd9080d0b2019e3cbb8b97dc7c057787062172f2",
@@ -6963,7 +6963,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer-parent/1.20/animal-sniffer-parent-1.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a1725fa054a1b943fa3a8e7ee72f1b57b507488d",
@@ -6973,7 +6973,7 @@
 
   {
     "path": "org/codehaus/mojo/animal-sniffer/1.20/animal-sniffer-1.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bb77674578a2cc39819c4a38c632547d71ca2fd1",
@@ -6987,7 +6987,7 @@
 
   {
     "path": "org/codehaus/mojo/mojo-parent/23/mojo-parent-23",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "153edc13581302da19d92cf4e7b5d0e06831ac1b",
@@ -6997,7 +6997,7 @@
 
   {
     "path": "org/codehaus/mojo/mojo-parent/40/mojo-parent-40",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d2fa7c95447827e9bbcb8c60bd9484c51202732e",
@@ -7007,7 +7007,7 @@
 
   {
     "path": "org/codehaus/mojo/mojo-parent/50/mojo-parent-50",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8caf7f67d94e762418df68f034c88b6f18433860",
@@ -7017,7 +7017,7 @@
 
   {
     "path": "org/codehaus/mojo/mojo-parent/61/mojo-parent-61",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "11fdf4908dbf89fc128efc868ad990ad0a0a8b8a",
@@ -7027,7 +7027,7 @@
 
   {
     "path": "org/codehaus/mojo/signature/java16/1.1/java16-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "5a0be56a9fdede2bf8d60e0787bc32948b1e065c",
@@ -7041,7 +7041,7 @@
 
   {
     "path": "org/codehaus/mojo/signature/signatures-parent/1.1/signatures-parent-1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8971d05ec8f68f516e13626f2cce8e6585176b7a",
@@ -7051,7 +7051,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e93052514961d9aebb23ef1090b85292a19af650",
@@ -7065,7 +7065,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a39bedbc3fa3652d3606821d7c21d80e900f57a0",
@@ -7079,7 +7079,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e05bc927ead7a1e7dc36c7daed209611d94fbb6d",
@@ -7093,7 +7093,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "aed78d67ee20a5038741c7cc2a8124ae20c960ad",
@@ -7103,7 +7103,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fd506865d5d083d8cef9fdbf525ad99fcc3416c1",
@@ -7117,7 +7117,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-component-annotations/1.5.6/plexus-component-annotations-1.5.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b16f9ab986b5477270995f5a3b08ca4af773b81d",
@@ -7131,7 +7131,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b3100bff4d6af30a293f11b7a8023110882cfb00",
@@ -7145,7 +7145,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b86c9acce33ef506e0cef3692ebc784df0db195a",
@@ -7159,7 +7159,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e16f1c9b83cdeb142fc038dd0262c61121d58c4b",
@@ -7169,7 +7169,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "cd786b660f8a4c1c520403a5fa04c7be45212b84",
@@ -7179,7 +7179,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-containers/1.5.6/plexus-containers-1.5.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "56d4a2c63b628cb5afa513a328da6daf29cf1ab0",
@@ -7189,7 +7189,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "01ee1c699a2730f9119b35055fb0674af36125ea",
@@ -7199,7 +7199,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-containers/2.1.0/plexus-containers-2.1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "133ad2d4fca8f498be182d776e85f359f7ac6e36",
@@ -7209,7 +7209,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f557cb47f4594ac941d0edf08093a03ce15b51ba",
@@ -7223,7 +7223,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-container-default/2.1.0/plexus-container-default-2.1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "422fa1b8961ec766735cc1bea268e8206402667a",
@@ -7237,7 +7237,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f03da80999422b6cc4300735789be83e4498a3bc",
@@ -7251,7 +7251,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "af412be9edee5aad63bbb304752ac0deda35ff08",
@@ -7265,7 +7265,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a82e1ddd2d795616ac58d73ed246b8ec65326dfa",
@@ -7279,7 +7279,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b1f42bc7ebc5be3c0414f67fe2daf3b183acd74f",
@@ -7293,7 +7293,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "51785edd83de609389ba142c9516752a4246aefc",
@@ -7307,7 +7307,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ca907d86ff52f09153ba271a995c049a3a6d1859",
@@ -7321,7 +7321,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "288f4a74efd0cea03e1d59272271f07d598b88d6",
@@ -7335,7 +7335,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus-utils/3.4.1/plexus-utils-3.4.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "35061118d2f5f4fa1289b40656dfd7567ccc98b6",
@@ -7349,7 +7349,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "06f66b2f7d2eef1d805c11bca91c89984cda4137",
@@ -7359,7 +7359,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "b6c97d19090baa51e953fb782e3986b068fb450f",
@@ -7369,7 +7369,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "da193f47e5ce5a2cb85931851b3698e61cde8227",
@@ -7379,7 +7379,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f6ee62f8157f273757b8ffda59714a6a279a174d",
@@ -7389,7 +7389,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f081c65405b2d5e403c9d57e791b23f613966322",
@@ -7399,7 +7399,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "7ba5dd42cae4e80cf4d34ecff014dbf34df26b59",
@@ -7409,7 +7409,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/4.0/plexus-4.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "cdbb31ee91973d16e8f8b0bda51ed4211e7a9f57",
@@ -7419,7 +7419,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/5.1/plexus-5.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2fca82e2eb5172f6a2909bea7accc733581a8c71",
@@ -7429,7 +7429,7 @@
 
   {
     "path": "org/codehaus/plexus/plexus/8/plexus-8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "b3982e53f063775a9ab1d8522a5928ffadfcf54a",
@@ -7439,7 +7439,7 @@
 
   {
     "path": "org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1904b38c8a2e06e5458e3abd5db2af48c271f2cb",
@@ -7453,7 +7453,7 @@
 
   {
     "path": "org/codehaus/woodstox/wstx-asl/4.0.6/wstx-asl-4.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1b049ad3d4d696ea5fa64a0391189b78162dd93b",
@@ -7463,7 +7463,7 @@
 
   {
     "path": "org/easymock/easymockclassextension/3.2/easymockclassextension-3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7a11e8397359652228c0d359de72f8238dafd758",
@@ -7477,7 +7477,7 @@
 
   {
     "path": "org/easymock/easymock-parent/3.2/easymock-parent-3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1d130e585b385841b0ac06f546e0fcd859074620",
@@ -7487,7 +7487,7 @@
 
   {
     "path": "org/easymock/easymock-parent/4.3/easymock-parent-4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "efbf2d2d75a77ae5f4c88faf83e492f962341700",
@@ -7497,7 +7497,7 @@
 
   {
     "path": "org/easymock/easymock/4.3/easymock-4.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a392122f9847ec2d4ae7ce79064b9db5741c44b7",
@@ -7511,7 +7511,7 @@
 
   {
     "path": "org/eclipse/ee4j/project/1.0.6/project-1.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "9adda6d67ddf76eb9ed4e1c331d705d03dc2a94b",
@@ -7521,7 +7521,7 @@
 
   {
     "path": "org/eclipse/ee4j/project/1.0.7/project-1.0.7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "b0f6c4bc691a0b694a377edc9bc4777871647253",
@@ -7531,7 +7531,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-alpn-client/11.0.6/jetty-alpn-client-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9cc5dffaed584c997302875897350d1fe7174a1c",
@@ -7545,7 +7545,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-alpn-parent/11.0.6/jetty-alpn-parent-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "ca7a52e0b88edf03a048dc60f70e989d560f386e",
@@ -7555,7 +7555,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-client/9.4.20.v20190813/jetty-client-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "12a39ab7f9a47bf16f852d51b55d2bbba2d1c98e",
@@ -7569,7 +7569,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-client/11.0.6/jetty-client-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ea318094377629a0845fa92e2370d09f550a91ce",
@@ -7583,7 +7583,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-http/9.4.20.v20190813/jetty-http-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "30ce26dc677849a39a55818ab912cba067f4c59d",
@@ -7597,7 +7597,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-http/11.0.6/jetty-http-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b27faf13ddf1c573fed21102c7f8910968ffad9d",
@@ -7611,7 +7611,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-io/9.4.20.v20190813/jetty-io-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a57846fa14e123d7cf3780f2657abddfeeeac005",
@@ -7625,7 +7625,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-io/11.0.6/jetty-io-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fff458c577b303130beb65f9bf9c0a6a5819af72",
@@ -7639,7 +7639,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-project/9.4.20.v20190813/jetty-project-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2bd8af396a8f2e0851b179e031baa83ebc35348d",
@@ -7649,7 +7649,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-project/9.4.43.v20210629/jetty-project-9.4.43.v20210629",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "30b490eee8f0a577befc4a6fcd234150ea6d4451",
@@ -7659,7 +7659,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-project/11.0.6/jetty-project-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "6acec52d2ec3d07c2339de1eff0622c12d78b770",
@@ -7669,7 +7669,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-security/9.4.20.v20190813/jetty-security-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a206f8557f6a5d0f4b030caa707740665d6adbc5",
@@ -7683,7 +7683,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-security/11.0.6/jetty-security-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "938fde763e8c29ec7779c08cd7ef2fcba3585f3d",
@@ -7697,7 +7697,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-server/9.4.20.v20190813/jetty-server-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9f7cbac662ecaa2caa423f3a04fd9d21390b7b65",
@@ -7711,7 +7711,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-server/11.0.6/jetty-server-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b5db2f55365f584d6d488efcda377cb284e4f8d8",
@@ -7725,7 +7725,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-servlet/9.4.20.v20190813/jetty-servlet-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ce9e934e99f57e0da267fcb7265c910810f44acf",
@@ -7739,7 +7739,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-servlet/11.0.6/jetty-servlet-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "579fd481a39d0850d762c3219700503f39e33d8b",
@@ -7753,7 +7753,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-util/9.4.20.v20190813/jetty-util-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2d76c825694276efb665df53181ac00c3dafadcb",
@@ -7767,7 +7767,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-util/11.0.6/jetty-util-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cfe406ab272eb2e487df74f25a3dab8ba2b0eb9b",
@@ -7781,7 +7781,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-webapp/9.4.20.v20190813/jetty-webapp-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "65be4f870103573c9ae91d635b48c44da1165789",
@@ -7795,7 +7795,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-webapp/11.0.6/jetty-webapp-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5e110c0bb17b9ff0f543812d34ae7e5eb35d813d",
@@ -7809,7 +7809,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-xml/9.4.20.v20190813/jetty-xml-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8ce18725d07e3bd5887b4db9af1162471ad6c231",
@@ -7823,7 +7823,7 @@
 
   {
     "path": "org/eclipse/jetty/jetty-xml/11.0.6/jetty-xml-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6e366c45ef14fcd65717aeb05a20d82ea7afd415",
@@ -7837,7 +7837,7 @@
 
   {
     "path": "org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6f347e81966ce5d9fe7a84a457efca27dd620b02",
@@ -7851,7 +7851,7 @@
 
   {
     "path": "org/eclipse/jetty/toolchain/jetty-toolchain/1.6/jetty-toolchain-1.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "347bc6c72efd323614ebe9205130971ca1d7742a",
@@ -7861,7 +7861,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-api/9.4.20.v20190813/websocket-api-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fc380c57b8ab192ad4c434f401370df9c6b2e379",
@@ -7875,7 +7875,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-api/9.4.43.v20210629/websocket-api-9.4.43.v20210629",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8e9573cdc05aad111e7c4ce83c77c28a79dd9df7",
@@ -7889,7 +7889,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-client/9.4.20.v20190813/websocket-client-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "24505458b38e2fda16c4be524fc67d04667fee00",
@@ -7903,7 +7903,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-client/9.4.43.v20210629/websocket-client-9.4.43.v20210629",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "25c63ba4548e45ae23c2032483262d6ab125715d",
@@ -7917,7 +7917,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-common/9.4.20.v20190813/websocket-common-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d98ed29a5d95bd7c0c9aff1b0437b4046e1591bb",
@@ -7931,7 +7931,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-common/9.4.43.v20210629/websocket-common-9.4.43.v20210629",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "df2906c3e31307d15518b75c27cc1044b93559e3",
@@ -7945,7 +7945,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-core-common/11.0.6/websocket-core-common-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "89f3c17187de0c331949d8e7198bab4fa44e93e8",
@@ -7959,7 +7959,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-core-server/11.0.6/websocket-core-server-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0afae3d3ffc783bb38d7387c99397be99041ed89",
@@ -7973,7 +7973,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-parent/9.4.20.v20190813/websocket-parent-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8e58314ae72abcefed1da71f2042b594d7ef374f",
@@ -7983,7 +7983,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-parent/9.4.43.v20210629/websocket-parent-9.4.43.v20210629",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "ec469bc4a1107b6f0da662da405af999f2fb577a",
@@ -7993,7 +7993,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-parent/11.0.6/websocket-parent-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "254913f5dcebfef42b9f77a494e0719ea6fc1cde",
@@ -8003,7 +8003,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-server/9.4.20.v20190813/websocket-server-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "80f4d819a8deb9208dcaf1f4054d439e30c31ba5",
@@ -8017,7 +8017,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-server/9.4.43.v20210629/websocket-server-9.4.43.v20210629",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "40cd82e54d7ae643a0a6d582947d3c87e9d83454",
@@ -8031,7 +8031,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-servlet/9.4.20.v20190813/websocket-servlet-9.4.20.v20190813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7d623856c217f6f40a5fe14cfa391dd80ff70636",
@@ -8045,7 +8045,7 @@
 
   {
     "path": "org/eclipse/jetty/websocket/websocket-servlet/11.0.6/websocket-servlet-11.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5ff16c5cbd6c9a561a6a79a57b17a265518724fc",
@@ -8059,7 +8059,7 @@
 
   {
     "path": "org/eclipse/sisu/org.eclipse.sisu.inject/0.3.5/org.eclipse.sisu.inject-0.3.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3722f112fe5752bbb677eeae0ff379848902df2c",
@@ -8073,7 +8073,7 @@
 
   {
     "path": "org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.5/org.eclipse.sisu.plexus-0.3.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e462a9a33f45e2f44460eb67611708791a8e9640",
@@ -8087,7 +8087,7 @@
 
   {
     "path": "org/eclipse/sisu/sisu-inject/0.3.5/sisu-inject-0.3.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "37191778332db19b604649f562b3aa4aaa84063b",
@@ -8097,7 +8097,7 @@
 
   {
     "path": "org/eclipse/sisu/sisu-plexus/0.3.5/sisu-plexus-0.3.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "2bfdf50eb1fcf53bf56114cf988f5ad5ddb34e4d",
@@ -8107,7 +8107,7 @@
 
   {
     "path": "org/glassfish/jaxb/jaxb-bom/2.3.1/jaxb-bom-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "a5a4f48c2e08c00b5bea5dd8ada4ccf864c3f9cf",
@@ -8117,7 +8117,7 @@
 
   {
     "path": "org/glassfish/jaxb/jaxb-bom/3.0.2/jaxb-bom-3.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1ff4084c4508c271cc7590f8947a71bf195c840b",
@@ -8127,7 +8127,7 @@
 
   {
     "path": "org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "1856da23a80b9b1374d925d6dcb4a21db2144204",
@@ -8141,7 +8141,7 @@
 
   {
     "path": "org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c78aa440484eab1a6e2104e4fe69d0945a3cb3da",
@@ -8155,7 +8155,7 @@
 
   {
     "path": "org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "bb398c03ac69274e050cb81b96a6621f5192e7cc",
@@ -8169,7 +8169,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "872e413497b906e7c9fa85ccc96046c5d1ef7ece",
@@ -8183,7 +8183,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "38ab94ecdd3d06f85750bfe075b4736b59c6eaa4",
@@ -8197,7 +8197,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "399ab31a6a84f36c84a9f50b9ba82fd890436391",
@@ -8211,7 +8211,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-integration/1.3/hamcrest-integration-1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "6175ef91dd87a6d909f7442f0a421acd227996b9",
@@ -8225,7 +8225,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8e2a1dd4d5ba590c7a904209f1f40f66d9349ee9",
@@ -8239,7 +8239,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "90ab7986e9daf1c916a63f42a62c533ea1805d5f",
@@ -8253,7 +8253,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "93c7a7bc18925ba9bc86a917a959986219492ed0",
@@ -8267,7 +8267,7 @@
 
   {
     "path": "org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "80391bd32bfa4837a15215d5e9f07c60555c379a",
@@ -8277,7 +8277,7 @@
 
   {
     "path": "org/hamcrest/hamcrest/2.1/hamcrest-2.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5ec7fedbeb4dddbfdcaf696ae286e1b6c1e1df4b",
@@ -8291,7 +8291,7 @@
 
   {
     "path": "org/hamcrest/hamcrest/2.2/hamcrest-2.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "98624f676c4d263b568816b0af5d4f552a2d0501",
@@ -8305,7 +8305,7 @@
 
   {
     "path": "org/jboss/weld/weld-parent/26/weld-parent-26",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "54a75d96c0c3f6bb4b32293d2ababb8fae665e91",
@@ -8315,7 +8315,7 @@
 
   {
     "path": "org/jboss/weld/weld-parent/36/weld-parent-36",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "3ddf8699d0341d762089ddc1173266cb62ca7e6c",
@@ -8325,7 +8325,7 @@
 
   {
     "path": "org/jdom/jdom2/2.0.6/jdom2-2.0.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "11e250d112bc9f2a0e1a595a5f6ecd2802af2691",
@@ -8339,7 +8339,7 @@
 
   {
     "path": "org/jetbrains/annotations/13.0/annotations-13.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fa7d3d07cc80547e2d15bf4839d3267c637c642f",
@@ -8353,7 +8353,7 @@
 
   {
     "path": "org/jetbrains/intellij/deps/trove4j/1.0.20181211/trove4j-1.0.20181211",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ad9cb821b804f05ed013ce89e3ec4d32d101bd79",
@@ -8367,7 +8367,7 @@
 
   {
     "path": "org/jetbrains/kotlinx/kotlinx-coroutines-android/1.4.1/kotlinx-coroutines-android-1.4.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "032594ba9887dc4c831a94bf20fe1132d7c7b2bb",
@@ -8381,7 +8381,7 @@
 
   {
     "path": "org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.4.1/kotlinx-coroutines-core-jvm-1.4.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c3b94b2a93623a25ca099abaed0361497ce33d3a",
@@ -8395,7 +8395,7 @@
 
   {
     "path": "org/jetbrains/kotlinx/kotlinx-coroutines-core/1.3.8/kotlinx-coroutines-core-1.3.8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "4e6547ff543d0b040169fb1c19a03cd6b78504f2",
@@ -8409,7 +8409,7 @@
 
   {
     "path": "org/jetbrains/kotlinx/kotlinx-coroutines-core/1.4.1/kotlinx-coroutines-core-1.4.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3be5622d79563553600afd0f24121bea4a7e42e2",
@@ -8423,7 +8423,7 @@
 
   {
     "path": "org/jetbrains/kotlinx/kotlinx-metadata-jvm/0.1.0/kotlinx-metadata-jvm-0.1.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b6b8510bd1307e5c859457e7775a864afcc81f80",
@@ -8437,7 +8437,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-annotation-processing-gradle/1.4.32/kotlin-annotation-processing-gradle-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "768ca4b005bb814b0fa61bac14381baf07840c0d",
@@ -8451,7 +8451,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-compiler-embeddable/1.4.32/kotlin-compiler-embeddable-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "4e982732a609a692421652cfbee3a5c885c48674",
@@ -8465,7 +8465,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-daemon-embeddable/1.4.32/kotlin-daemon-embeddable-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0d5258c7256fa7a1b5b2aad85ed772f3a9dec453",
@@ -8479,7 +8479,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-klib-commonizer-embeddable/1.4.32/kotlin-klib-commonizer-embeddable-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5c3b5f9f2d1afd74fc9fd544068a558a63264f93",
@@ -8493,7 +8493,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-reflect/1.3.72/kotlin-reflect-1.3.72",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9b5a835fdc0002f6d825600c771bbbea2cc1a31f",
@@ -8507,7 +8507,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-reflect/1.4.32/kotlin-reflect-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cd7bbe9e8aea8d8f0471373205de8a0871e949db",
@@ -8521,7 +8521,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-scripting-common/1.4.32/kotlin-scripting-common-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "40a6fc4f700b2207705a9aec48eb6aa9d31e187e",
@@ -8535,7 +8535,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.4.32/kotlin-scripting-compiler-embeddable-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7f57d507ced35b9ef1c3de79c91ce5f4bbeb7b6f",
@@ -8549,7 +8549,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.4.32/kotlin-scripting-compiler-impl-embeddable-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e3dfb3a29dcc0127c42e1afc6e304838ac57c922",
@@ -8563,7 +8563,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-scripting-jvm/1.4.32/kotlin-scripting-jvm-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e21cbb62a97711026476b42aefcc3a2ec2951060",
@@ -8577,7 +8577,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-script-runtime/1.4.32/kotlin-script-runtime-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "289a57d3593585ae59ec51f7ac0ad07a1034c6a9",
@@ -8591,7 +8591,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.20/kotlin-stdlib-common-1.3.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "507fa9faf5120c5c5247bc1b23476ad91760c09c",
@@ -8605,7 +8605,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.31/kotlin-stdlib-common-1.3.31",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5cd6de0110a706c04138af5daff820031a3861f8",
@@ -8619,7 +8619,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.50/kotlin-stdlib-common-1.3.50",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cde9d3a23570b97ee3727865a0dec0ac52a61cf7",
@@ -8633,7 +8633,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.60/kotlin-stdlib-common-1.3.60",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9b0f75dca0716e00e80f77eca0d912434b818aa9",
@@ -8647,7 +8647,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.71/kotlin-stdlib-common-1.3.71",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "dc5b708b195cb44fcb098c96c5ed4774a53d5c93",
@@ -8661,7 +8661,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.3.72/kotlin-stdlib-common-1.3.72",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c4e521d2c0af9e771afbfc11fff4b2f5111b2678",
@@ -8675,7 +8675,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "03055a223c66d74a15ae3f53870e910e769483ff",
@@ -8689,7 +8689,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ae20e1aa54cb2713d1c43f227c8c290a136be427",
@@ -8703,7 +8703,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.4.32/kotlin-stdlib-common-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "dedd0518589a9a4745559ec1b67ada106915329d",
@@ -8717,7 +8717,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-common/1.5.30/kotlin-stdlib-common-1.5.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "850c3ca345e0afacbfaf203f5259e3e1be59df9e",
@@ -8731,7 +8731,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.72/kotlin-stdlib-jdk7-1.3.72",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "765a55cb8f50072490c6029ac9208a62f6f45eaf",
@@ -8745,7 +8745,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.32/kotlin-stdlib-jdk7-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "23da429ef5dd4678d03377405822680e2da84246",
@@ -8759,7 +8759,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.5.30/kotlin-stdlib-jdk7-1.5.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "efbcacb7449201f5df0375ceb38d2a603bd5af6b",
@@ -8773,7 +8773,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.72/kotlin-stdlib-jdk8-1.3.72",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9c1a61f9bf0a8155519010856d13e91c8d24fb92",
@@ -8787,7 +8787,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.32/kotlin-stdlib-jdk8-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5a3eef93e614c6f3f13b323563593b5bb577071d",
@@ -8801,7 +8801,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.5.30/kotlin-stdlib-jdk8-1.5.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a95e23c8f40c3220953b05956eb96e959a85ca6a",
@@ -8815,7 +8815,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.20/kotlin-stdlib-1.3.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9d1e01f424795aa471a8def0b5dc8aeeb537aafd",
@@ -8829,7 +8829,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.31/kotlin-stdlib-1.3.31",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e4e40ca37fa7cc6dffeef283f7872cafc345b000",
@@ -8843,7 +8843,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.50/kotlin-stdlib-1.3.50",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a75b191fa2963dcd96413bab2d0fb385b136a4e6",
@@ -8857,7 +8857,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.60/kotlin-stdlib-1.3.60",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "73924ccc41144c8ddd80b19e4acbc850f1afd7a5",
@@ -8871,7 +8871,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.71/kotlin-stdlib-1.3.71",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "47da9a84ba07a4de17cddff5e139f8d120627c62",
@@ -8885,7 +8885,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "aecbe532bd46a37d2217a63cc0fed4eca0bd71cc",
@@ -8899,7 +8899,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.4.0/kotlin-stdlib-1.4.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "4758d9ec733fd494e6e67fe493d6ac60cd30659d",
@@ -8913,7 +8913,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "4009b36445a3299714e6401489b04f467ad77f90",
@@ -8927,7 +8927,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.4.32/kotlin-stdlib-1.4.32",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5dda24ec00298aed19523dead8e06bef2f0fd003",
@@ -8941,7 +8941,7 @@
 
   {
     "path": "org/jetbrains/kotlin/kotlin-stdlib/1.5.30/kotlin-stdlib-1.5.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d4e1f037717ed2c78f8e5982c5dbc33daab87521",
@@ -8955,7 +8955,7 @@
 
   {
     "path": "org/jetbrains/trove4j/trove4j/20160824/trove4j-20160824",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "5be49445de412640606e639322600e584162f8ff",
@@ -8969,7 +8969,7 @@
 
   {
     "path": "org/jmock/jmock-imposters/2.12.0/jmock-imposters-2.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ea428de408a6653758f472bdcf39ac28a46eb0a1",
@@ -8983,7 +8983,7 @@
 
   {
     "path": "org/jmock/jmock-junit4/2.12.0/jmock-junit4-2.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0ff0092210debcdd7c8a5938f22cefcbfae9363e",
@@ -8997,7 +8997,7 @@
 
   {
     "path": "org/jmock/jmock-legacy/2.12.0/jmock-legacy-2.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f8d1b4d11ef7b521b6b898a722fea264b8c4c37b",
@@ -9011,7 +9011,7 @@
 
   {
     "path": "org/jmock/jmock-parent/2.12.0/jmock-parent-2.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e147cb94f80e229e37052bfdea3c6c8eaec75a5d",
@@ -9021,7 +9021,7 @@
 
   {
     "path": "org/jmock/jmock-testjar/2.12.0/jmock-testjar-2.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "715d33626c894b14d91d46e563ab084e25caa791",
@@ -9035,7 +9035,7 @@
 
   {
     "path": "org/jmock/jmock/2.12.0/jmock-2.12.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2d7b2919291b1e490cb1b266b28a2b81dbf6ebcc",
@@ -9049,7 +9049,7 @@
 
   {
     "path": "org/json/json/20180813/json-20180813",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "218ad36b491e585397587a361b0a6d5c973eba53",
@@ -9063,7 +9063,7 @@
 
   {
     "path": "org/json/json/20210307/json-20210307",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ad033169bfb193b62f2538cd9a63d9fbb81bbec0",
@@ -9077,7 +9077,7 @@
 
   {
     "path": "org/jsoup/jsoup/1.12.1/jsoup-1.12.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "26d4984272ea79e25bacb5dd0317aea869a2998c",
@@ -9091,7 +9091,7 @@
 
   {
     "path": "org/jsoup/jsoup/1.13.1/jsoup-1.13.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "ecd02e1b652931792e1b44bca21cf50828c80476",
@@ -9105,7 +9105,7 @@
 
   {
     "path": "org/junit/junit-bom/5.7.1/junit-bom-5.7.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "ea517dcd1a0692cf193264d3e3ef0cc1a4a7b410",
@@ -9115,7 +9115,7 @@
 
   {
     "path": "org/junit/junit-bom/5.7.2/junit-bom-5.7.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e8848369738c03e40af5507686216f9b8b44b6a3",
@@ -9125,7 +9125,7 @@
 
   {
     "path": "org/junit/junit-bom/5.8.0/junit-bom-5.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "33f1cdecc8c87bc4bdb9c902f59b0bce36cad5d9",
@@ -9135,7 +9135,7 @@
 
   {
     "path": "org/junit/jupiter/junit-jupiter-api/5.8.0/junit-jupiter-api-5.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f41023d210e3f4fd3e78cd2a4a60f74a539ad6b6",
@@ -9149,7 +9149,7 @@
 
   {
     "path": "org/junit/jupiter/junit-jupiter-engine/5.8.0/junit-jupiter-engine-5.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "25e006b0ed594bd5da334a988fc8518c95ae2ac8",
@@ -9163,7 +9163,7 @@
 
   {
     "path": "org/junit/jupiter/junit-jupiter-params/5.8.0/junit-jupiter-params-5.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "60e459a05236c2df95eaf0e7799c124b02517cfa",
@@ -9177,7 +9177,7 @@
 
   {
     "path": "org/junit/platform/junit-platform-commons/1.8.0/junit-platform-commons-1.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "fab4c0fd110997a70b7f9349fa4257f6cb7c706a",
@@ -9191,7 +9191,7 @@
 
   {
     "path": "org/junit/platform/junit-platform-engine/1.8.0/junit-platform-engine-1.8.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8de9a271802b769f16913ec55d44df1381a6bb23",
@@ -9205,7 +9205,7 @@
 
   {
     "path": "org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cc7022b896125220e51f46fa50f4b68e564ffec1",
@@ -9219,7 +9219,7 @@
 
   {
     "path": "org/jvnet/staxex/stax-ex/2.1.0-M1/stax-ex-2.1.0-M1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a5bc59adbab79faf56d8b59bb35043b541559cc8",
@@ -9233,7 +9233,7 @@
 
   {
     "path": "org/mockito/mockito-core/2.19.0/mockito-core-2.19.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "10357319e212efe5275d5e38b6ae7522476a9f57",
@@ -9247,7 +9247,7 @@
 
   {
     "path": "org/mockito/mockito-core/3.9.0/mockito-core-3.9.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "015dd233edf8561f41646e04ebab9401ce6377fe",
@@ -9261,7 +9261,7 @@
 
   {
     "path": "org/nanohttpd/nanohttpd-project/2.3.1/nanohttpd-project-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "6249ebd55c19580109076faced0fddaa92dfc67b",
@@ -9271,7 +9271,7 @@
 
   {
     "path": "org/nanohttpd/nanohttpd/2.3.1/nanohttpd-2.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f34d7fb6036e16545c6b260f850029352ce89458",
@@ -9285,7 +9285,7 @@
 
   {
     "path": "org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "cfc0966402e8174fbacd5c5dd355b5815364a4fe",
@@ -9295,7 +9295,7 @@
 
   {
     "path": "org/objenesis/objenesis-parent/3.0.1/objenesis-parent-3.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "af52f05c2778a0dd939240f421102f37934d00de",
@@ -9305,7 +9305,7 @@
 
   {
     "path": "org/objenesis/objenesis-parent/3.2/objenesis-parent-3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "833ced74e7fd53408a3915080c5e50f2dc90dc35",
@@ -9315,7 +9315,7 @@
 
   {
     "path": "org/objenesis/objenesis/2.6/objenesis-2.6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b6d1f689e0d2b2d96b0730fad7b5d96902bf64d8",
@@ -9329,7 +9329,7 @@
 
   {
     "path": "org/objenesis/objenesis/3.0.1/objenesis-3.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "07bc80cb2de5e9693c1ae4bccb82aaff8291b8ab",
@@ -9343,7 +9343,7 @@
 
   {
     "path": "org/objenesis/objenesis/3.2/objenesis-3.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d6bda29a6a26aa5207ab880a4f09870aff20e3c6",
@@ -9357,7 +9357,7 @@
 
   {
     "path": "org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b5c66f49b69c36797c1fb7f4ec57776f261303ad",
@@ -9371,7 +9371,7 @@
 
   {
     "path": "org/ow2/asm/asm-analysis/7.0/asm-analysis-7.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "20186ccd5304839aea81893ebc65addc6ad4ca5e",
@@ -9385,7 +9385,7 @@
 
   {
     "path": "org/ow2/asm/asm-commons/6.0/asm-commons-6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f434c622e92b7ad7048706b78c5ce014e74a7e8e",
@@ -9399,7 +9399,7 @@
 
   {
     "path": "org/ow2/asm/asm-commons/7.0/asm-commons-7.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7b5da826fcab00989f748b7c4f72e75e668da210",
@@ -9413,7 +9413,7 @@
 
   {
     "path": "org/ow2/asm/asm-parent/6.0/asm-parent-6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "6a030ede2a62bdde4a6b23ef342994703a11ea24",
@@ -9423,7 +9423,7 @@
 
   {
     "path": "org/ow2/asm/asm-tree/7.0/asm-tree-7.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9a26ff62a5b01e4fa15ce96fcdb78738817d3066",
@@ -9437,7 +9437,7 @@
 
   {
     "path": "org/ow2/asm/asm-tree/9.2/asm-tree-9.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2e168ad097e0b56f1aa6695a80982b8f455b1ba8",
@@ -9451,7 +9451,7 @@
 
   {
     "path": "org/ow2/asm/asm-util/6.0/asm-util-6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "00a631614520a8655772955f43dcc80db071230e",
@@ -9465,7 +9465,7 @@
 
   {
     "path": "org/ow2/asm/asm-util/7.0/asm-util-7.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0944ed3d072e935fe950cb08e6e5fabbec76d81b",
@@ -9479,7 +9479,7 @@
 
   {
     "path": "org/ow2/asm/asm/6.0/asm-6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8e8ac765fb0b5099bde117857df7f7cc7aa08165",
@@ -9493,7 +9493,7 @@
 
   {
     "path": "org/ow2/asm/asm/7.0/asm-7.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c6b547ce67397df979bde680a1d0cdf8ceb63f6a",
@@ -9507,7 +9507,7 @@
 
   {
     "path": "org/ow2/asm/asm/7.1/asm-7.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7e40eb6619fd20bd7d98bf775bfdd810aec87ac7",
@@ -9521,7 +9521,7 @@
 
   {
     "path": "org/ow2/asm/asm/9.1/asm-9.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "927153d04a920d5f06a9a4aefd5f6be60726117d",
@@ -9535,7 +9535,7 @@
 
   {
     "path": "org/ow2/asm/asm/9.2/asm-9.2",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b24408a1c2214bc57380faf45b37bd67be7732b5",
@@ -9549,7 +9549,7 @@
 
   {
     "path": "org/ow2/ow2/1.3/ow2-1.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "f679d6639bfb209b0836a5e7cf09bfbcc1a41f06",
@@ -9559,7 +9559,7 @@
 
   {
     "path": "org/ow2/ow2/1.5/ow2-1.5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d8edc69335f4d9f95f511716fb689c86fb0ebaae",
@@ -9569,7 +9569,7 @@
 
   {
     "path": "org/robolectric/annotations/4.3.1/annotations-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7d54b98bf3248861fa823be48f86c3d808ed9170",
@@ -9583,7 +9583,7 @@
 
   {
     "path": "org/robolectric/junit/4.3.1/junit-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f7824e2d3e36a5a7c2e007f68f08f3f867803ef2",
@@ -9597,7 +9597,7 @@
 
   {
     "path": "org/robolectric/pluginapi/4.3.1/pluginapi-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "cc215c606e9e1ebbe22f4d362ebab325f5bc0c42",
@@ -9611,7 +9611,7 @@
 
   {
     "path": "org/robolectric/plugins-maven-dependency-resolver/4.3.1/plugins-maven-dependency-resolver-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2e10f08978fd051635db453b84d6c55e7b116ddf",
@@ -9625,7 +9625,7 @@
 
   {
     "path": "org/robolectric/resources/4.3.1/resources-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c6010c8a2a1d7d29043019c716c6ad1dd5d14c9e",
@@ -9639,7 +9639,7 @@
 
   {
     "path": "org/robolectric/robolectric/4.3.1/robolectric-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2757c6ed8aa122ef0f2d8862a38a1c822574494c",
@@ -9653,7 +9653,7 @@
 
   {
     "path": "org/robolectric/sandbox/4.3.1/sandbox-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0204235e06e539c54338d68315ee015e49c03f97",
@@ -9667,7 +9667,7 @@
 
   {
     "path": "org/robolectric/shadowapi/4.3.1/shadowapi-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "2b6adf9ef07275ddf4fc64873f59370c29465883",
@@ -9681,7 +9681,7 @@
 
   {
     "path": "org/robolectric/shadows-framework/4.3.1/shadows-framework-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "97af2ffbf8408cf41d40bf2386bd8fa31323d0c4",
@@ -9695,7 +9695,7 @@
 
   {
     "path": "org/robolectric/utils-reflector/4.3.1/utils-reflector-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "76f60a27f0f40627594e4c232f48b46ea22a3515",
@@ -9709,7 +9709,7 @@
 
   {
     "path": "org/robolectric/utils/4.3.1/utils-4.3.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7bcf761a172715b23cfa1ba7ba4dae5e4958eb80",
@@ -9723,7 +9723,7 @@
 
   {
     "path": "org/slf4j/jcl-over-slf4j/2.0.0-alpha5/jcl-over-slf4j-2.0.0-alpha5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "10fd59906c5a47da77f96834c464da7fd472851a",
@@ -9737,7 +9737,7 @@
 
   {
     "path": "org/slf4j/jul-to-slf4j/2.0.0-alpha5/jul-to-slf4j-2.0.0-alpha5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "7038b1bbef8fc65d47a1b2e0a496829f561309b1",
@@ -9751,7 +9751,7 @@
 
   {
     "path": "org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8c8bb0f3db0a157fb3eae782204533bfa7aab903",
@@ -9765,7 +9765,7 @@
 
   {
     "path": "org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "02013960e5ee7f712d8fa6f2e618a6ff2e8d98a9",
@@ -9779,7 +9779,7 @@
 
   {
     "path": "org/slf4j/slf4j-api/2.0.0-alpha5/slf4j-api-2.0.0-alpha5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "81b5496c77956334945b92738f2407d6c6eb8065",
@@ -9793,7 +9793,7 @@
 
   {
     "path": "org/slf4j/slf4j-jdk14/2.0.0-alpha5/slf4j-jdk14-2.0.0-alpha5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "9055ded49a361930af4696831f2e5c9ea92e52b9",
@@ -9807,7 +9807,7 @@
 
   {
     "path": "org/slf4j/slf4j-parent/1.7.16/slf4j-parent-1.7.16",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c0aa830d3b40a7e220b39d5a3c8e326ced996345",
@@ -9817,7 +9817,7 @@
 
   {
     "path": "org/slf4j/slf4j-parent/1.7.30/slf4j-parent-1.7.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "d3cf0e0cdb58d3c6f8a08c21e55894422fd725b9",
@@ -9827,7 +9827,7 @@
 
   {
     "path": "org/slf4j/slf4j-parent/2.0.0-alpha5/slf4j-parent-2.0.0-alpha5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "7099e8b69993614780298f3ec9be6621a45a12c8",
@@ -9837,7 +9837,7 @@
 
   {
     "path": "org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f1fed8090265b0aa4f7610006ad2e45570b263c2",
@@ -9851,7 +9851,7 @@
 
   {
     "path": "org/slf4j/slf4j-simple/2.0.0-alpha5/slf4j-simple-2.0.0-alpha5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d45dabaaacdaf4be76bca96719f97d47dab1cfbe",
@@ -9865,7 +9865,7 @@
 
   {
     "path": "org/sonatype/buildsupport/buildsupport/5/buildsupport-5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "3ec549a5144eb1eb758ce830f54238274c364e79",
@@ -9875,7 +9875,7 @@
 
   {
     "path": "org/sonatype/buildsupport/buildsupport/12/buildsupport-12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "6143ba56585952a1660d3845d7f3ad489ef13213",
@@ -9885,7 +9885,7 @@
 
   {
     "path": "org/sonatype/buildsupport/public-parent/5/public-parent-5",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "548d69b38689deb19d39bc6b19f0378d8e07c707",
@@ -9895,7 +9895,7 @@
 
   {
     "path": "org/sonatype/buildsupport/public-parent/12/public-parent-12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "92f1428e728bca93d767eb725ddff85cc05d8b93",
@@ -9905,7 +9905,7 @@
 
   {
     "path": "org/sonatype/forge/forge-parent/3/forge-parent-3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "fdc1f6eb65f750775acd57ff4371d5657ae2e6d3",
@@ -9915,7 +9915,7 @@
 
   {
     "path": "org/sonatype/forge/forge-parent/4/forge-parent-4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "564f266ea9323e57e246f0fca8f04f596663fb86",
@@ -9925,7 +9925,7 @@
 
   {
     "path": "org/sonatype/forge/forge-parent/6/forge-parent-6",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8726e91194a5442e05472854652602a3b599f27d",
@@ -9935,7 +9935,7 @@
 
   {
     "path": "org/sonatype/forge/forge-parent/10/forge-parent-10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "c24dc843444f348100c19ebd51157e7a5f61bfe7",
@@ -9945,7 +9945,7 @@
 
   {
     "path": "org/sonatype/forge/forge-parent/38/forge-parent-38",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "1869421fb762c3de75b5f97386bfbee804842c09",
@@ -9955,7 +9955,7 @@
 
   {
     "path": "org/sonatype/oss/oss-parent/4/oss-parent-4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "281323f0e2b10184d6c6b230909401166b437e01",
@@ -9965,7 +9965,7 @@
 
   {
     "path": "org/sonatype/oss/oss-parent/7/oss-parent-7",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "46b8a785b60a2767095b8611613b58577e96d4c9",
@@ -9975,7 +9975,7 @@
 
   {
     "path": "org/sonatype/oss/oss-parent/9/oss-parent-9",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e5cdc4d23b86d79c436f16fed20853284e868f65",
@@ -9985,7 +9985,7 @@
 
   {
     "path": "org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "8c0bee97c1badb926611bf82358e392fedc07764",
@@ -9999,7 +9999,7 @@
 
   {
     "path": "org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "18c39936b9da963de44b4d68adf204f7c5df3a45",
@@ -10013,7 +10013,7 @@
 
   {
     "path": "org/sonatype/sisu/inject/cglib/3.1.1/cglib-3.1.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "3b8c3ab393b04d18f460098052d28cc2d7b383e2",
@@ -10027,7 +10027,7 @@
 
   {
     "path": "org/sonatype/sisu/inject/guice-parent/2.9.4/guice-parent-2.9.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e3384998bebccae239ae80008bfe9fd2c8d41ed2",
@@ -10037,7 +10037,7 @@
 
   {
     "path": "org/sonatype/sisu/inject/guice-parent/4.2.0/guice-parent-4.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "fdd7b4563dfe0ee83aad256fb498bd2525217a0f",
@@ -10047,7 +10047,7 @@
 
   {
     "path": "org/sonatype/sisu/inject/wrappers/2.6.0/wrappers-2.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "52b3ed977685a66ee5a3395d10caf236916a00d1",
@@ -10057,7 +10057,7 @@
 
   {
     "path": "org/sonatype/sisu/sisu-guice/2.9.4/sisu-guice-2.9.4",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "789a6b0e49022acd7e952b4f784753f4a31f8e9a",
@@ -10071,7 +10071,7 @@
 
   {
     "path": "org/sonatype/sisu/sisu-guice/4.2.0/sisu-guice-4.2.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "0eacb79d0f0793d20c9fec5d999f4d6d90aa8c71",
@@ -10085,7 +10085,7 @@
 
   {
     "path": "org/sonatype/sisu/sisu-inject-bean/2.6.0/sisu-inject-bean-2.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "f77dc54f31502213e67c844541febed118545d6e",
@@ -10099,7 +10099,7 @@
 
   {
     "path": "org/sonatype/sisu/sisu-inject-plexus/2.6.0/sisu-inject-plexus-2.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "a734fc5d5ffb0866a15d6d9fa069bf4aa1926ebd",
@@ -10113,7 +10113,7 @@
 
   {
     "path": "org/sonatype/sisu/sisu-inject/2.6.0/sisu-inject-2.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "57220e4a4f9a9b99ecc338b1d33f27b8892cfe7b",
@@ -10123,7 +10123,7 @@
 
   {
     "path": "org/sonatype/sisu/sisu-parent/2.6.0/sisu-parent-2.6.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "cd2c8cdd32bfc296715119fe51bae2b2989957b2",
@@ -10133,7 +10133,7 @@
 
   {
     "path": "org/sonatype/spice/model-builder/1.10/model-builder-1.10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "158c7bff6ad1573728f5215ad73b72fd7325e504",
@@ -10147,7 +10147,7 @@
 
   {
     "path": "org/sonatype/spice/spice-parent/10/spice-parent-10",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "8e0e4ba87d63321333c26494698377b1204633a8",
@@ -10157,7 +10157,7 @@
 
   {
     "path": "org/sonatype/spice/spice-parent/12/spice-parent-12",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "e86b2d826f53093e27dc579bea3becbf1425d9ba",
@@ -10167,7 +10167,7 @@
 
   {
     "path": "org/sonatype/spice/spice-parent/17/spice-parent-17",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "pom",
     "pom": {
       "sha1": "7f500699ef371383492a4d6ee799b1a77ffd82cc",
@@ -10177,7 +10177,7 @@
 
   {
     "path": "org/tensorflow/tensorflow-lite-metadata/0.1.0-rc1/tensorflow-lite-metadata-0.1.0-rc1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "49601bf0916d0b2cfee191163a154376fb37e98b",
@@ -10191,7 +10191,7 @@
 
   {
     "path": "org/whispersystems/curve25519-java/0.5.0/curve25519-java-0.5.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "c5b9e4059d1f8b3b6bb75add1bf620d9e82b4434",
@@ -10205,7 +10205,7 @@
 
   {
     "path": "ru/vyarus/gradle-animalsniffer-plugin/1.5.3/gradle-animalsniffer-plugin-1.5.3",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "d152d3fac3146c8db577cb39ea9c7e7bbdae2fad",
@@ -10219,7 +10219,7 @@
 
   {
     "path": "stax/stax-api/1.0.1/stax-api-1.0.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "e3a933099229a34b22e9e78b2b999e1eb03b3e4e",
@@ -10233,7 +10233,7 @@
 
   {
     "path": "tools/fastlane/screengrab/2.0.0/screengrab-2.0.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "aar",
     "pom": {
       "sha1": "ecc9d072ad89cb7422e4df5f2250a94d7bc5ab8a",
@@ -10247,7 +10247,7 @@
 
   {
     "path": "uk/co/samuelwall/material-tap-target-prompt/3.3.0/material-tap-target-prompt-3.3.0",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "aar",
     "pom": {
       "sha1": "d6904d12de0d906e30dcf2d3b8b3776d1f17253e",
@@ -10261,7 +10261,7 @@
 
   {
     "path": "xerces/xercesImpl/2.8.1/xercesImpl-2.8.1",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "abda46c0359b0e2dcf7a31359128a0c6cecd4dca",
@@ -10275,7 +10275,7 @@
 
   {
     "path": "xml-apis/xml-apis/1.3.03/xml-apis-1.3.03",
-    "host": "https://repo.maven.apache.org/maven2",
+    "host": "https://repo1.maven.org/maven2",
     "type": "jar",
     "pom": {
       "sha1": "b3ba55077dae1297654bb74200fe01a9fe02944c",

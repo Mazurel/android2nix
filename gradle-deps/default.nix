@@ -77,8 +77,8 @@ in stdenv.mkDerivation {
   buildPhase = "${script}/bin/create-local-maven-repo";
   # Patched AAPT2 
   patchPhase = ''
-    aapt2_dir=$out/com/android/tools/build/aapt2/${aapt2.version}
-    mkdir -p $aapt2_dir
-    ln -sf ${aapt2}/* $aapt2_dir
+    #aapt2_dir=$out/com/android/tools/build/aapt2/${aapt2.version}
+    #mkdir -p $aapt2_dir
+    #ln -sf ${aapt2}/* $aapt2_dir
   '';
 }
