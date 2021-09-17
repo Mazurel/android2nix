@@ -37,15 +37,36 @@
             mkdir -p $out
             cp -rf ./* $out/
             '';
+
+            fixupPhase = ''
+            cd $out
+
+            find . -name "build.gradle" -exec sed -i "s/classpath files('libs\/gradle-witness\.jar')//" {} \;
+            find . -name "build.gradle" -exec sed -i "s/apply \(plugin\|from\): 'witness\(\.gradle\)\?'//" {} \;
+            find . -name "build.gradle" -exec sed -i "s/id 'witness'//" {} \;
+            find . -name "build.gradle" -exec sed -i "s/tor 'org.briarproject:obfs4proxy-android:0.0.12-dev-40245c4a@zip'//" {} \;
+
+            SETTINGS_COPY="$(cat settings.gradle)"
+
+            echo "
+pluginManagement {
+   repositories {
+     mavenLocal()
+     gradlePluginPortal()
+   }
+}" > settings.gradle
+            echo "$SETTINGS_COPY" >> settings.gradle
+            '';
           };
         in
           {
+            packages.src = src;
             packages.debug-keystore = pkgs.callPackage ./keystore.nix {};
             packages.gradle-deps = pkgs.gradle-deps ./deps.json;
             packages.release = pkgs.callPackage ./release.nix
               {
-                #inherit src;
-                src = /home/mateusz/ttais/nix/briar/src;
+                inherit src;
+                # src = ./nasty-modified-src-copy;
                 deps = (pkgs.gradle-deps ./deps.json);
                 gradlePkg = pkgs.gradle_6;
               };

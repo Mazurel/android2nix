@@ -66,7 +66,7 @@ let
 in
 stdenv.mkDerivation {
   name = "status-react-maven-deps";
-  buildInputs = [ aapt2 ];
+  buildInputs = [ ];
   phases = [ "buildPhase" "patchPhase" ];
   buildPhase = "${script}/bin/create-local-maven-repo";
   # Patched AAPT2 

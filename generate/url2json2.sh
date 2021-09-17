@@ -60,6 +60,7 @@ declare -a POSSIBLE_EXTS=(
     "jar"
     "aar"
     "signature"
+    "zip"
 )
 
 ANY_FOUND="n"

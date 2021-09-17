@@ -35,8 +35,6 @@ let
 
   # There are only two types of Gradle build targets: pr and release
   gradleBuildType = if buildType == "pr" then "Pr" else "Release";
-
-  apksPath = "./android/app/build/outputs/apk/${toLower gradleBuildType}";
 in
 stdenv.mkDerivation rec {
   inherit name src;
@@ -128,14 +126,8 @@ stdenv.mkDerivation rec {
         assembleDebug \
         || exit 1
     '';
-  doCheck = true;
-  checkPhase = ''
-    #ls ${apksPath}/*.apk \
-    #  | xargs -n1 ${pkgs.unzip}/bin/unzip -qql \
-    #  | grep 'assets/index.android.bundle'
-  '';
   installPhase = ''
     mkdir -p $out
-    cp -rf ./* $out/
+    find . -name "*.apk" -exec cp {} $out/ \;
   '';
 }

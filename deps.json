@@ -2649,6 +2649,10 @@
       "pom": {
 	"sha1": "6fbb0c543303228bb25ae8d46b0538edaec67e7e",
 	"sha256": "01bc8f4z8rz49s4rymsgk09n0xpzdazjkkq043x9hbk61brja4m2"
+      },
+      "zip": {
+	"sha1": "59bdd64be1d777e8db6bc0e4e539363b9f8791e4",
+	"sha256": "0rm7ncydlmvdhgsmixa6ip71cvpp9fj92jdcjfn86flb0pkjj80p"
       }
 },
 
