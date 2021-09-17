@@ -125,17 +125,17 @@ stdenv.mkDerivation rec {
         -Dmaven.repo.local='${deps}' \
         -Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2 \
         -PversionCode=${toString buildNumber} \
-        assemble${gradleBuildType} \
+        assembleDebug \
         || exit 1
     '';
   doCheck = true;
   checkPhase = ''
-    ls ${apksPath}/*.apk \
-      | xargs -n1 ${pkgs.unzip}/bin/unzip -qql \
-      | grep 'assets/index.android.bundle'
+    #ls ${apksPath}/*.apk \
+    #  | xargs -n1 ${pkgs.unzip}/bin/unzip -qql \
+    #  | grep 'assets/index.android.bundle'
   '';
   installPhase = ''
     mkdir -p $out
-    cp ${apksPath}/*.apk $out/
+    cp -rf ./* $out/
   '';
 }

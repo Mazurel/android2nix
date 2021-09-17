@@ -41,9 +41,11 @@
         in
           {
             packages.debug-keystore = pkgs.callPackage ./keystore.nix {};
+            packages.gradle-deps = pkgs.gradle-deps ./deps.json;
             packages.release = pkgs.callPackage ./release.nix
               {
-                inherit src;
+                #inherit src;
+                src = /home/mateusz/ttais/nix/briar/src;
                 deps = (pkgs.gradle-deps ./deps.json);
                 gradlePkg = pkgs.gradle_6;
               };

@@ -34,6 +34,7 @@ while [[ ! "$@" == "" ]]; do
 	--jobs|-j)
 	    shift
 	    JOBS=$1
+	    ;;
 	--help|-h)
 	    echo "$0 [-(-h)elp] [--root-dir <directory>] [--nested-in-android] [--task <task>] [--repos-file <repos.txt>] [-(-j)obs <n>]"
 	    echo ""
@@ -56,7 +57,7 @@ while [[ ! "$@" == "" ]]; do
 	    echo "    -(-h)elp - Show this menu"
 	    echo ""
 	    echo "NOTES:"
-	    echo "This script loads additional dependencies (that aren't automatically loaded) from `additional-deps.list` file that has the same structure as `deps.list`. It assumes that this file is avaible in PWD."
+	    echo 'This script loads additional dependencies (that arent automatically loaded) from `additional-deps.list` file that has the same structure as `deps.list`. It assumes that this file is avaible in PWD.'
 	    exit
 	    ;;
     esac
@@ -165,8 +166,8 @@ function gen_deps_json() {
     # Format URLs into a Nix consumable file.
     URLS=$(cat ${DEPS_URLS})
     parallel --will-cite --keep-order \
-        url2json.sh \
 	--jobs $JOBS \
+        url2json2.sh \
         ::: ${URLS} \
         >> ${DEPS_JSON}
 

@@ -24,15 +24,18 @@ nix build .#release
 
 ### Gradle can't resolve XYZ dependency
 
-If you are facing this kind of issue, you will need to manually update `deps.list` file (packages are newline separated).
+If you are facing this kind of issue, you will need to manually update `additional-deps.list` file (packages are newline separated).
 Just add `<dependency and version>` to this file, got into devshell and run:
 
 ```bash
-generate --root-dir <dir> --task gen_deps_urls
-generate --root-dir <dir> --task gen_deps_json
+generate --task gen_deps_list ...(rest of args)
+generate --task gen_deps_urls ...(rest of args)
+generate --task gen_deps_json ...(rest of args)
 ```
 
 This should resolve such issue.
 
+## Gradle witness support
 
+Currently witness is not (yet!) supported. You will need to disable it for your project when building with Nix.
 

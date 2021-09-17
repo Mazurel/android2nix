@@ -186,6 +186,7 @@ net.ltgt.gradle.incap:incap:0.2
 net.sf.jopt-simple:jopt-simple:4.9
 net.sf.kxml:kxml2:2.3.0
 net.sf.proguard:proguard-base:6.0.3
+org.antlr:antlr4-runtime:4.5.2-1
 org.apache-extras.beanshell:bsh:2.0b6
 org.apache.ant:ant-launcher:1.8.0
 org.apache.ant:ant:1.8.0
@@ -212,7 +213,6 @@ org.bouncycastle:bcpkix-jdk15on:1.56
 org.bouncycastle:bcprov-jdk15on:1.56
 org.bouncycastle:bcprov-jdk15on:1.69
 org.briarproject:jtorctl:0.3
-org.briarproject:obfs4proxy-android:0.0.12-dev-40245c4a
 org.briarproject:obfs4proxy:0.0.12-dev-40245c4a
 org.briarproject:tor-android:0.3.5.15
 org.briarproject:tor:0.3.5.15
@@ -257,6 +257,8 @@ org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.1
 org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8
 org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1
 org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.1.0
+org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:1.4.32
+org.jetbrains.kotlin.kapt:org.jetbrains.kotlin.kapt.gradle.plugin:1.4.32
 org.jetbrains.kotlin:kotlin-annotation-processing-gradle:1.4.32
 org.jetbrains.kotlin:kotlin-compiler-embeddable:1.4.32
 org.jetbrains.kotlin:kotlin-daemon-embeddable:1.4.32
