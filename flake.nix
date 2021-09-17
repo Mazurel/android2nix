@@ -11,7 +11,6 @@
     {
       overlay = final: prev: rec {
         go-maven-resolver = prev.callPackage ./go-maven-resolver {};
-        aapt2 = prev.callPackage ./aapt2 {};
         patch-maven-source = prev.callPackage ./patch-maven-srcs {};
         generate = prev.callPackage ./generate { inherit go-maven-resolver; };
 
@@ -66,7 +65,6 @@ pluginManagement {
             packages.release = pkgs.callPackage ./release.nix
               {
                 inherit src;
-                # src = ./nasty-modified-src-copy;
                 deps = (pkgs.gradle-deps ./deps.json);
                 gradlePkg = pkgs.gradle_6;
               };
