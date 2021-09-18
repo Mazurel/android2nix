@@ -5,7 +5,7 @@ set -e
 set -o pipefail
 
 if [[ -z "${IN_NIX_SHELL}" ]]; then
-    echo "Remember to call 'make shell'!"
+    echo "Remember to call 'nix develop .'!"
     exit 1
 fi
 
@@ -160,6 +160,8 @@ function gen_deps_urls() {
 
 # Generate the JSON that Nix will consume.
 function gen_deps_json() {
+    echo "This may take a while, you may want to specify --jobs argument ..."
+    
     # Open the Nix attribute set.
     echo -n "[" > ${DEPS_JSON}
 
@@ -167,7 +169,7 @@ function gen_deps_json() {
     URLS=$(cat ${DEPS_URLS})
     parallel --will-cite --keep-order \
 	--jobs $JOBS \
-        url2json2.sh \
+        url2json.sh \
         ::: ${URLS} \
         >> ${DEPS_JSON}
 

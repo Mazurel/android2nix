@@ -43,7 +43,7 @@
             find . -name "build.gradle" -exec sed -i "s/classpath files('libs\/gradle-witness\.jar')//" {} \;
             find . -name "build.gradle" -exec sed -i "s/apply \(plugin\|from\): 'witness\(\.gradle\)\?'//" {} \;
             find . -name "build.gradle" -exec sed -i "s/id 'witness'//" {} \;
-            find . -name "build.gradle" -exec sed -i "s/tor 'org.briarproject:obfs4proxy-android:0.0.12-dev-40245c4a@zip'//" {} \;
+            # find . -name "build.gradle" -exec sed -i "s/tor 'org.briarproject:obfs4proxy-android:0.0.12-dev-40245c4a@zip'//" {} \;
 
             SETTINGS_COPY="$(cat settings.gradle)"
 

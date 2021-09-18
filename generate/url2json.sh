@@ -19,7 +19,7 @@ if [ "$REPOS_FILE" == "" ]; then
 	"https://plugins.gradle.org/m2/"
     )
 else
-    IFS="\n" declare -a REPOS=$(cat "$REPOS_FILE")
+    readarray -t REPOS < $REPOS_FILE
 fi
 
 function nix_fetch() {
@@ -30,10 +30,9 @@ function get_nix_path() { echo "${1}" | tail -n1; }
 function get_nix_sha() { echo "${1}" | head -n1; }
 function get_sha1() { sha1sum "${1}" | cut -d' ' -f1; }
 
-# Assumes REPOS from repos.sh is available
 function match_repo_url() {
     for REPO_URL in "${REPOS[@]}"; do
-        if [[ "$1" = ${REPO_URL}* ]]; then
+        if [[ "$1" == "${REPO_URL}"* ]]; then
             echo "${REPO_URL}"
             return
         fi
@@ -51,83 +50,57 @@ POM_URL=${1}
 # Drop the POM extension
 OBJ_REL_URL=${POM_URL%.pom}
 
-echo -en "${CLR} - Nix entry for: ${1##*/}\r" >&2
-
 REPO_URL=$(match_repo_url "${OBJ_REL_URL}")
 
-if [[ -z "${REPO_URL}" ]]; then
-    echo "\r\n ? REPO_URL: ${REPO_URL}" >&2
-fi
 # Get the relative path without full URL
 OBJ_REL_NAME="${OBJ_REL_URL#${REPO_URL}/}"
 
-OBJ_NIX_FETCH_OUT=$(nix_fetch "${OBJ_REL_URL}.jar")
-# Dependency might be a JAR or an AAR
-if [[ ${?} -eq 0 ]]; then
-    # Some deps have only a POM, nor JAR or AAR
-    OBJ_TYPE="jar"
-    OBJ_PATH=$(get_nix_path "${OBJ_NIX_FETCH_OUT}")
-    OBJ_SHA256=$(get_nix_sha "${OBJ_NIX_FETCH_OUT}")
+declare -a POSSIBLE_EXTS=(
+    "pom"
+    "jar"
+    "aar"
+    "signature"
+    "zip"
+    "apk"
+)
+
+ANY_FOUND="n"
+
+for EXT in "${POSSIBLE_EXTS[@]}"; do
+
+    CURRENT_URL="${OBJ_REL_URL}.${EXT}"
+
+    FETCHED_OBJ=$(nix_fetch "$CURRENT_URL")
+
+    [[ ! ${?} -eq 0 ]] && continue
+
+    OBJ_PATH=$(get_nix_path "${FETCHED_OBJ}")
+
+    echo -en "${CLR} - Nix entry for: ${OBJ_PATH}\r" >&2
+    
+    OBJ_SHA256=$(get_nix_sha "${FETCHED_OBJ}")
     OBJ_SHA1=$(get_sha1 "${OBJ_PATH}")
-else
-    OBJ_NIX_FETCH_OUT=$(nix_fetch "${OBJ_REL_URL}.aar")
-    if [[ ${?} -eq 0 ]]; then
-        OBJ_TYPE="aar"
-        OBJ_PATH=$(get_nix_path "${OBJ_NIX_FETCH_OUT}")
-        OBJ_SHA256=$(get_nix_sha "${OBJ_NIX_FETCH_OUT}")
-        OBJ_SHA1=$(get_sha1 "${OBJ_PATH}")
+
+    if [[ $ANY_FOUND == "y" ]]; then
+	echo -n ","
     else
-        OBJ_TYPE="pom"
+	ANY_FOUND="y"
+	# Print common part
+	echo -ne "
+     {
+       \"path\": \"${OBJ_REL_NAME}\",
+       \"host\": \"${REPO_URL}\","
     fi
-fi
+    echo -ne "
+       \"$EXT\": {
+         \"sha1\": \"${OBJ_SHA1}\",
+         \"sha256\": \"${OBJ_SHA256}\"
+       }"
+done
 
-# Sometimes dependencies may contain .signature files
-# Ex. org/codehaus/mojo/signature/java16/1.1/java16-1.1
-SIG_NIX_FETCH_OUT=$(nix_fetch "${OBJ_REL_URL}.signature")
-if [[ ${?} -eq 0 ]]; then
-    SIG_OBJ_PATH=$(get_nix_path "${SIG_NIX_FETCH_OUT}")
-    SIG_OBJ_SHA256=$(get_nix_sha "${SIG_NIX_FETCH_OUT}")
-    SIG_OBJ_SHA1=$(get_sha1 "${SIG_OBJ_PATH}")
-fi
-
-# Both JARs and AARs have a POM
-POM_NIX_FETCH_OUT=$(nix_fetch "${OBJ_REL_URL}.pom")
-POM_PATH=$(get_nix_path "${POM_NIX_FETCH_OUT}")
-if [[ -z "${POM_PATH}" ]]; then
-    echo " ! Failed to fetch: ${OBJ_REL_URL}.pom" >&2
+if [ "$ANY_FOUND" == "n" ]; then
+    echo "Didn't found any compatible extension for $OBJ_REL_URL" >&2
     exit 1
 fi
-POM_SHA256=$(get_nix_sha "${POM_NIX_FETCH_OUT}")
-POM_SHA1=$(get_sha1 "${POM_PATH}")
 
-# Format into a Nix attrset entry
-echo -ne "
-  {
-    \"path\": \"${OBJ_REL_NAME}\",
-    \"host\": \"${REPO_URL}\",
-    \"type\": \"${OBJ_TYPE}\","
-if [[ -n "${POM_SHA256}" ]]; then
-    echo -n "
-    \"pom\": {
-      \"sha1\": \"${POM_SHA1}\",
-      \"sha256\": \"${POM_SHA256}\"
-    }";
-    if [[ -n "${OBJ_SHA256}" || -n "${SIG_OBJ_SHA256}" ]]; then
-	echo -n ","
-    fi
-fi
-if [[ -n "${OBJ_SHA256}" ]]; then
-    echo -n "
-    \"jar\": {
-      \"sha1\": \"${OBJ_SHA1}\",
-      \"sha256\": \"${OBJ_SHA256}\"
-    }";[[ -n "${SIG_OBJ_SHA256}" ]] && echo -n ","
-fi
-if [[ -n "${SIG_OBJ_SHA256}" ]]; then
-    echo -n "
-    \"signature\": {
-      \"sha1\": \"${SIG_OBJ_SHA1}\",
-      \"sha256\": \"${SIG_OBJ_SHA256}\"
-    }"
-fi
-echo -e "\n  },"
+echo -e "\n    },"

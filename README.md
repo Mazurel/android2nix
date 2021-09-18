@@ -20,6 +20,13 @@ Build the app
 nix build .#release
 ```
 
+## Known issues
+
+- Gradle plugins need to be filled manually in `additional-deps.list` (can be fixed)
+- Some files may not be avaiable from local maven repo as they are filtered by extension. If some extension is missing, please add it to `generate/url2json.sh`.
+- Sometimes dependencies are loaded correctly. In this case you need to add them manually.
+- Gradle witness breaks when you are using local repo (can be fixed)
+
 ## Possible fixes for issues
 
 ### Gradle can't resolve XYZ dependency

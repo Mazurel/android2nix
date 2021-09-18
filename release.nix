@@ -19,7 +19,6 @@ let
   # These will be abstracted out to builder
   pname = "briar";
 
-  buildType = "release";
   buildNumber = 9999;
   gradleOpts = null;
   # Used to detect end-to-end builds
@@ -30,11 +29,11 @@ let
 
   androidComposition = pkgs.callPackage ./android.nix {};
 
-  baseName = "${buildType}-android";
+  baseName = "android";
   name = "${pname}-build-${baseName}";
 
   # There are only two types of Gradle build targets: pr and release
-  gradleBuildType = if buildType == "pr" then "Pr" else "Release";
+  gradleBuildType = "assembleDebug";
 in
 stdenv.mkDerivation rec {
   inherit name src;
@@ -58,7 +57,6 @@ stdenv.mkDerivation rec {
     "-Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2";
 
   # Used by the Android Gradle build script in android/build.gradle
-  # STATUS_GO_ANDROID_LIBDIR = "${status-go}";
 
   phases = [
     "unpackPhase"
@@ -123,7 +121,7 @@ stdenv.mkDerivation rec {
         -Dmaven.repo.local='${deps}' \
         -Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2 \
         -PversionCode=${toString buildNumber} \
-        assembleDebug \
+        ${gradleBuildType} \
         || exit 1
     '';
   installPhase = ''

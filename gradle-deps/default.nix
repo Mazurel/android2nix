@@ -5,14 +5,9 @@ let
   inherit (lib)
     removeSuffix optionalString splitString concatMapStrings
     attrByPath attrValues last makeOverridable importJSON
-    mapAttrs foldAttrs concatStringsSep
-    ;
+    mapAttrs foldAttrs concatStringsSep;
 
-  deps = lib.trivial.pipe deps-path
-    [
-      builtins.readFile
-      builtins.fromJSON
-    ];
+  deps = importJSON deps-path;
 
   # some .jar files have an `-aot` suffix that doesn't work for .pom files
   getPOM = jarUrl: "${removeSuffix "-aot" jarUrl}.pom";
@@ -63,7 +58,7 @@ let
 
 in
 stdenv.mkDerivation {
-  name = "status-react-maven-deps";
+  name = "local-maven-repo";
   buildInputs = [ ];
   phases = [ "buildPhase" "patchPhase" ];
   buildPhase = "${script}/bin/create-local-maven-repo";
