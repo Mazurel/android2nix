@@ -75,8 +75,6 @@ for EXT in "${POSSIBLE_EXTS[@]}"; do
     [[ ! ${?} -eq 0 ]] && continue
 
     OBJ_PATH=$(get_nix_path "${FETCHED_OBJ}")
-
-    echo -en "${CLR} - Nix entry for: ${OBJ_REL_NAME}.${EXT}\r" >&2
     
     OBJ_SHA256=$(get_nix_sha "${FETCHED_OBJ}")
     OBJ_SHA1=$(get_sha1 "${OBJ_PATH}")

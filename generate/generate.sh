@@ -147,6 +147,7 @@ function gen_deps_json() {
     # Format URLs into a Nix consumable file.
     URLS=$(cat ${DEPS_URLS})
     parallel --will-cite --keep-order \
+	--bar \
 	--jobs $JOBS \
         url2json.sh \
         ::: ${URLS} \
