@@ -1,5 +1,13 @@
 { nixpkgs, flake-utils, overlay, devshell-flake, android-devshell-module }:
-{ devshell, deps, src ? null, mkSrc ? null, systems ? flake-utils.lib.defaultSystems, ... }:
+{ devshell
+, deps
+, enableParallelBuilding ? true
+, buildType ? "assembleDebug"
+, src ? null
+, mkSrc ? null
+, systems ? flake-utils.lib.defaultSystems
+, ...
+} @ args:
 assert src == null -> mkSrc != null;
 flake-utils.lib.eachSystem systems (
   system:
@@ -43,6 +51,7 @@ flake-utils.lib.eachSystem systems (
         packages.local-maven-repo = pkgs.local-maven-repo deps;
         packages.release = pkgs.callPackage ./release.nix
           {
+            inherit buildType enableParallelBuilding;
             src = src';
             local-maven-repo = (pkgs.local-maven-repo deps);
             gradlePkg = pkgs.gradle_6;

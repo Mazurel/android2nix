@@ -41,7 +41,9 @@ in
     {
       devshell.packages = with pkgs; [
         jdk11
+        androidComposition.androidsdk
         androidComposition.platform-tools
+        androidComposition
       ];
 
       env =

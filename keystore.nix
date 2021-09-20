@@ -15,17 +15,15 @@ let
   KEYSTORE_KEY_PASSWORD = "briarPass"; # getAttr "KEYSTORE_KEY_PASSWORD" gradleProps;
 
 in stdenv.mkDerivation {
-  name = "status-react-android-keystore";
+  name = "android2nix-android-keystore";
 
   buildInputs = [ pkgs.openjdk8 ];
 
   phases = [ "generatePhase" ];
   generatePhase = ''
     keytool -genkey -v \
-        -keyalg RSA \
-        -keysize 2048 \
+        -keyalg RSA -keysize 2048 \
         -validity 10000 \
-        -deststoretype pkcs12 \
         -dname "CN=, OU=, O=, L=, S=, C=" \
         -keystore "$out" \
         -alias "${KEYSTORE_ALIAS}" \

@@ -8,6 +8,8 @@
 , src
 , gradlePkg
 , androidComposition
+, enableParallelBuilding
+, buildType
 , ...
 }:
 let
@@ -27,11 +29,7 @@ let
   # If it is not we use an ad-hoc one generated with default password.
   keystorePath = pkgs.callPackage ./keystore.nix {};
 
-  baseName = "android";
-  name = "${pname}-build-${baseName}";
-
-  # There are only two types of Gradle build targets: pr and release
-  gradleBuildType = "assembleRelease";
+  name = "${pname}-${buildType}-android";
 in
 stdenv.mkDerivation rec {
   inherit name src;
@@ -60,6 +58,7 @@ stdenv.mkDerivation rec {
     "preBuildPatchPhase"
     "buildPhase"
     "installPhase"
+    "signPhase"
   ];
 
   unpackPhase = ''
@@ -94,7 +93,7 @@ stdenv.mkDerivation rec {
   keystorePhase =
     assert assertMsg (keystorePath != null) "keystorePath has to be set!";
     ''
-      export KEYSTORE_PATH="$PWD/status-im.keystore"
+      export KEYSTORE_PATH="$PWD/${pname}.keystore"
       cp -a --no-preserve=ownership "${keystorePath}" "$KEYSTORE_PATH"
     '';
 
@@ -125,17 +124,38 @@ stdenv.mkDerivation rec {
 
       ${adhocEnvVars} ${gradlePkg}/bin/gradle \
         ${toString gradleOpts} \
+        ${pkgs.lib.optionalString enableParallelBuilding "--parallel"} \
         --console=plain \
         --offline --stacktrace \
         -Dorg.gradle.daemon=false \
         -Dmaven.repo.local='${local-maven-repo}' \
         -Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2 \
         -PversionCode=${toString buildNumber} \
-        ${gradleBuildType} \
+        ${buildType} \
         || exit 1
     '';
+  
   installPhase = ''
     mkdir -p $out
     find . -name "*.apk" -exec cp {} $out/ \;
+  '';
+
+  signPhase = ''
+    cd $out
+
+    find . -name "*.apk" -exec \
+        $ANDROID_SDK_ROOT/build-tools/30.0.3/apksigner sign \
+                                --ks $KEYSTORE_PATH \
+                                --ks-pass pass:$KEYSTORE_PASSWORD \
+                                --key-pass pass:$KEYSTORE_KEY_PASSWORD \
+                                --ks-key-alias $KEYSTORE_ALIAS \
+                                {} \;
+
+#    find . -name "*.apk" -exec \
+#        ${pkgs.jdk}/bin/jarsigner -verbose \
+#                                -keystore $KEYSTORE_PATH \
+#                                -storepass $KEYSTORE_PASSWORD \
+#                                -keypass $KEYSTORE_KEY_PASSWORD \
+#                                {} $KEYSTORE_ALIAS \;
   '';
 }
