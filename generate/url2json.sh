@@ -76,7 +76,7 @@ for EXT in "${POSSIBLE_EXTS[@]}"; do
 
     OBJ_PATH=$(get_nix_path "${FETCHED_OBJ}")
 
-    echo -en "${CLR} - Nix entry for: ${OBJ_PATH}\r" >&2
+    echo -en "${CLR} - Nix entry for: ${OBJ_REL_NAME}.${EXT}\r" >&2
     
     OBJ_SHA256=$(get_nix_sha "${FETCHED_OBJ}")
     OBJ_SHA1=$(get_sha1 "${OBJ_PATH}")
@@ -103,4 +103,4 @@ if [ "$ANY_FOUND" == "n" ]; then
     exit 1
 fi
 
-echo -e "\n    },"
+echo -e "\n     },"

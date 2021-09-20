@@ -36,28 +36,7 @@ while [[ ! "$@" == "" ]]; do
 	    JOBS=$1
 	    ;;
 	--help|-h)
-	    echo "$0 [-(-h)elp] [--root-dir <directory>] [--nested-in-android] [--task <task>] [--repos-file <repos.txt>] [-(-j)obs <n>]"
-	    echo ""
-	    echo "ARGUMENTS:"
-	    echo "    --root-dir - Specify directory which will be treated as root of your project"
-	    echo ""
-	    echo "    --nested-in-android - If this flag is set then android folder in the root of your project will be used. Otherwise, treat root of the project as android folder"
-	    echo ""
-	    echo "    --task - Runs specified task, availabe tasks are:"
-	    echo "           * gen_proj_list"
-	    echo "           * gen_deps_list"
-	    echo "           * gen_deps_urls"
-	    echo "           * gen_deps_json"
-	    echo "             by default all of them are run from the top to bottom"
-	    echo ""
-	    echo "    --repos-file - txt file that contains list of maven repos to use"
-	    echo ""
-	    echo "    -(-j)obs - Number of parallel jobs (used when possible)"
-	    echo ""
-	    echo "    -(-h)elp - Show this menu"
-	    echo ""
-	    echo "NOTES:"
-	    echo 'This script loads additional dependencies (that arent automatically loaded) from `additional-deps.list` file that has the same structure as `deps.list`. It assumes that this file is avaible in PWD.'
+	    generate-help.sh generate
 	    exit
 	    ;;
     esac
@@ -180,11 +159,12 @@ function gen_deps_json() {
     echo "]" >> ${DEPS_JSON}
 }
 
-# ------------------------------------------------------------------------------
-echo "Regenerating Nix files..."
+# ------- Main -------
 
 # Gradle needs to be run in 'android' subfolder
 [ "$NESTED_IN_ANDROID" == "y" ] && cd $GIT_ROOT/android || cd $GIT_ROOT
+
+echo "Stopping gradle daemons ..."
 
 # Stop gradle daemons to avoid locking
 ./gradlew --stop >/dev/null

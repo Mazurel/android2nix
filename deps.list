@@ -213,6 +213,7 @@ org.bouncycastle:bcpkix-jdk15on:1.56
 org.bouncycastle:bcprov-jdk15on:1.56
 org.bouncycastle:bcprov-jdk15on:1.69
 org.briarproject:jtorctl:0.3
+org.briarproject:obfs4proxy-android:0.0.12-dev-40245c4a
 org.briarproject:obfs4proxy:0.0.12-dev-40245c4a
 org.briarproject:tor-android:0.3.5.15
 org.briarproject:tor:0.3.5.15

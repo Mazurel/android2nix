@@ -1,12 +1,19 @@
-## This project was supposed to help with building android apps
+## This project is supposed to help with building android apps
+
+*As you may see this repo is work in progress*
 
 This is supposed to be a tool for building Android apps with Nix.
 It is based on [status-react](https://github.com/status-im/status-react/tree/develop/nix) approach of building.
 
 It is currently supposed to build Briar app.
-Currently it completely fails.
 
 ## Steps (for now)
+
+### Set Nix up 
+
+TODO: Use `lib.makeAndroid2nixEnv`
+
+### After setting Nix up
 
 Load up dev shell and generate deps.json
 

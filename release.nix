@@ -4,11 +4,11 @@
 , config
 , callPackage
 , patch-maven-source
-, deps
+, local-maven-repo
 , src
 , gradlePkg
-,
-...
+, androidComposition
+, ...
 }:
 let
   inherit (lib)
@@ -27,19 +27,17 @@ let
   # If it is not we use an ad-hoc one generated with default password.
   keystorePath = pkgs.callPackage ./keystore.nix {};
 
-  androidComposition = pkgs.callPackage ./android.nix {};
-
   baseName = "android";
   name = "${pname}-build-${baseName}";
 
   # There are only two types of Gradle build targets: pr and release
-  gradleBuildType = "assembleDebug";
+  gradleBuildType = "assembleRelease";
 in
 stdenv.mkDerivation rec {
   inherit name src;
 
   buildInputs = with pkgs; [ nodejs jdk ];
-  nativeBuildInputs = with pkgs; [ bash gradle unzip ]
+  nativeBuildInputs = with pkgs; [ bash gradlePkg unzip ]
   ++ lib.optionals stdenv.isDarwin [ file gnumake ];
 
   # custom env variables derived from config
@@ -53,17 +51,14 @@ stdenv.mkDerivation rec {
 
   JAVA_HOME = "${pkgs.jdk}";
 
-  GRADLE_OPTS =
-    "-Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2";
-
   # Used by the Android Gradle build script in android/build.gradle
 
   phases = [
     "unpackPhase"
     "secretsPhase"
     "keystorePhase"
+    "preBuildPatchPhase"
     "buildPhase"
-    "checkPhase"
     "installPhase"
   ];
 
@@ -102,6 +97,21 @@ stdenv.mkDerivation rec {
       export KEYSTORE_PATH="$PWD/status-im.keystore"
       cp -a --no-preserve=ownership "${keystorePath}" "$KEYSTORE_PATH"
     '';
+
+  preBuildPatchPhase = ''
+    # This ensures that plugins use local maven repo
+    SETTINGS_COPY="$(cat settings.gradle)"
+
+    echo "
+    pluginManagement {
+       repositories {
+         mavenLocal()
+       }
+    }" > settings.gradle
+
+    echo "$SETTINGS_COPY" >> settings.gradle
+  '';
+
   buildPhase = let
     adhocEnvVars = optionalString stdenv.isLinux
       "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${makeLibraryPath [ pkgs.zlib ]}";
@@ -118,7 +128,7 @@ stdenv.mkDerivation rec {
         --console=plain \
         --offline --stacktrace \
         -Dorg.gradle.daemon=false \
-        -Dmaven.repo.local='${deps}' \
+        -Dmaven.repo.local='${local-maven-repo}' \
         -Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2 \
         -PversionCode=${toString buildNumber} \
         ${gradleBuildType} \

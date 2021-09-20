@@ -16,7 +16,7 @@
         "url": "https://code.briarproject.org/briar/briar.git"
       }
     },
-    "devshell": {
+    "devshell-flake": {
       "locked": {
         "lastModified": 1631528035,
         "narHash": "sha256-ZV4+WsrF1uaAOM2ynGzWD5dCmrWpKc+Rj1hZkodEPQY=",
@@ -62,7 +62,7 @@
     "root": {
       "inputs": {
         "briar": "briar",
-        "devshell": "devshell",
+        "devshell-flake": "devshell-flake",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
       }

@@ -44,7 +44,7 @@ let
                     ext: file:
                       ''
                         ${optionalString (file.path != "") ''
-                        ln -s "${file.path}" "${dep.path}.${ext}"
+                        cp "${file.path}" "${dep.path}.${ext}"
                       ''}
                         ${optionalString (file.sha1 != "") ''
                         echo "${file.sha1}" > "${dep.path}.${ext}.sha1"
