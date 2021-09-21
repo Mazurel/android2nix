@@ -18,7 +18,7 @@
 let
   inherit (lib)
     toLower optionalString stringLength assertMsg
-    makeLibraryPath checkEnvVarSet elem optionalString foldl
+    makeLibraryPath checkEnvVarSet elem foldl
     ;
 
   # Keystore can be provided via config and extra-sandbox-paths.
