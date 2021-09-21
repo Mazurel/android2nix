@@ -1,8 +1,6 @@
 { nixpkgs, flake-utils, overlay, devshell-flake, android-devshell-module }:
 { devshell
 , deps
-, enableParallelBuilding ? true
-, buildType ? "assembleDebug"
 , src ? null
 , mkSrc ? null
 , systems ? flake-utils.lib.defaultSystems
@@ -49,14 +47,23 @@ flake-utils.lib.eachSystem systems (
         };
 
         packages.local-maven-repo = pkgs.local-maven-repo deps;
-        packages.release = pkgs.callPackage ./release.nix
-          {
-            inherit buildType enableParallelBuilding;
-            src = src';
-            local-maven-repo = (pkgs.local-maven-repo deps);
-            gradlePkg = pkgs.gradle_6;
-            androidComposition = pkgs.androidenv.composeAndroidPackages
-              (pkgs.lib.importTOML devshell).android;
-          };
+        packages.release = pkgs.callPackage ./build.nix
+          (
+            {
+              src = src';
+              local-maven-repo = (pkgs.local-maven-repo deps);
+              gradlePkg = pkgs.gradle_6;
+              androidComposition = pkgs.androidenv.composeAndroidPackages
+                (pkgs.lib.importTOML devshell).android;
+            } // (
+              removeAttrs args [
+                "devshell"
+                "deps"
+                "src"
+                "mkSrc"
+                "systems"
+              ]
+            )
+          );
       }
 )

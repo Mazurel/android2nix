@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "briar": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1630420691,
-        "narHash": "sha256-Uh8QiAoso+xObo4BZRiACmgI7hWgRgvP3ev9zvHJYgM=",
-        "ref": "master",
-        "rev": "807677532c084a83c9e5943fa550fc7a906dc1df",
-        "revCount": 6469,
-        "type": "git",
-        "url": "https://code.briarproject.org/briar/briar.git"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://code.briarproject.org/briar/briar.git"
-      }
-    },
     "devshell-flake": {
       "locked": {
         "lastModified": 1631528035,
@@ -48,20 +32,22 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1631118067,
-        "narHash": "sha256-tEcFvm3a6ToeBGwHdjfB2mVQwa4LZCZTQYE2LnY3ycA=",
-        "path": "/nix/store/6dcqil119qr3sad2lp9ykkkc852ppmqm-source",
-        "rev": "09cd65b33c5653d7d2954fef4b9f0e718c899743",
-        "type": "path"
+        "lastModified": 1631962327,
+        "narHash": "sha256-h2fgtNHozEcB42BQ1QVWAJUpQ1FA3gpgq/RrOKAxbfE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "bc9b956714ed6eac5f8888322aac5bc41389defa",
+        "type": "github"
       },
       "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "briar": "briar",
         "devshell-flake": "devshell-flake",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
