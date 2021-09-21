@@ -31,7 +31,7 @@ let
     androidComposition.build-tools;
 
   getBuildToolsBin = build-tools:
-    "${build-tools}/libexec/android-sdk/build-tools/${build-tools.version}/";
+    "${build-tools}/libexec/android-sdk/build-tools/${build-tools.version}";
 
   name = "${pname}-${buildType}-android";
 in
@@ -124,7 +124,7 @@ stdenv.mkDerivation rec {
         --offline --stacktrace \
         -Dorg.gradle.daemon=false \
         -Dmaven.repo.local='${local-maven-repo}' \
-        -Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2 \
+        -Dorg.gradle.project.android.aapt2FromMavenOverride=${getBuildToolsBin latestBuildTools}/aapt2 \
         ${buildType} \
         || exit 1
     '';

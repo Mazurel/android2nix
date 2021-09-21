@@ -37,19 +37,26 @@ in
 
   config = let
     androidComposition = pkgs.androidenv.composeAndroidPackages cfg;
+
+    latestBuildTools = lib.foldl
+      (acc: tools: if builtins.compareVersions acc.version tools.version == -1 then tools else acc)
+      { version = ""; }
+      androidComposition.build-tools;
+
+    getBuildToolsBin = build-tools:
+      "${build-tools}/libexec/android-sdk/build-tools/${build-tools.version}";
   in
     {
       devshell.packages = with pkgs; [
         jdk11
         androidComposition.androidsdk
         androidComposition.platform-tools
-        androidComposition
       ];
 
       env =
         with pkgs; mkEnv rec {
           GRADLE_OPTS =
-            "-Dorg.gradle.project.android.aapt2FromMavenOverride=${androidComposition.androidsdk}/libexec/android-sdk/build-tools/30.0.3/aapt2";
+            "-Dorg.gradle.project.android.aapt2FromMavenOverride=${getBuildToolsBin latestBuildTools}/aapt2";
           ANDROID_SDK_ROOT = "${androidComposition.androidsdk}/libexec/android-sdk";
           ANDROID_NDK_ROOT = "${ANDROID_SDK_ROOT}/ndk-bundle";
           ANDROID_JAVA_HOME = "${jdk11.home}";
