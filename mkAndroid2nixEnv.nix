@@ -52,7 +52,7 @@ flake-utils.lib.eachSystem systems (
             {
               src = src';
               local-maven-repo = (pkgs.local-maven-repo deps);
-              gradlePkg = pkgs.gradle_6;
+              gradlePkg = pkgs.gradle;
               androidComposition = pkgs.androidenv.composeAndroidPackages
                 (pkgs.lib.importTOML devshell).android;
             } // (

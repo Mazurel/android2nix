@@ -38,7 +38,7 @@ in
 stdenv.mkDerivation rec {
   inherit name src;
 
-  buildInputs = with pkgs; [ nodejs jdk ];
+  buildInputs = with pkgs; [ nodejs jdk11 ];
   nativeBuildInputs = with pkgs; [ bash gradlePkg unzip ]
   ++ lib.optionals stdenv.isDarwin [ file gnumake ];
 
@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
   ANDROID_SDK_ROOT = "${androidComposition.androidsdk}/libexec/android-sdk";
   ANDROID_NDK_ROOT = "${ANDROID_SDK_ROOT}/ndk-bundle";
 
-  JAVA_HOME = "${pkgs.jdk}";
+  JAVA_HOME = "${pkgs.jdk11}";
 
   # Used by the Android Gradle build script in android/build.gradle
 
@@ -115,6 +115,8 @@ stdenv.mkDerivation rec {
       export GRADLE_USER_HOME=$(mktemp -d)
       export ANDROID_SDK_HOME=$(mktemp -d)
 
+      export JAVA_HOME="${pkgs.jdk11}"
+
       ${optionalString nestedInAndroid "cd android"}
 
       ${adhocEnvVars} ${gradlePkg}/bin/gradle \
@@ -122,6 +124,7 @@ stdenv.mkDerivation rec {
         ${optionalString enableParallelBuilding "--parallel"} \
         --console=plain \
         --offline --stacktrace \
+        -Dorg.gradle.java.home="${pkgs.jdk11}" \
         -Dorg.gradle.daemon=false \
         -Dmaven.repo.local='${local-maven-repo}' \
         -Dorg.gradle.project.android.aapt2FromMavenOverride=${getBuildToolsBin latestBuildTools}/aapt2 \

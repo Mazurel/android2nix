@@ -8,6 +8,25 @@
 
 # This defines URLs of Maven repos we know about and use.
 
+# TODO: cache from deps.json
+# cat deps.json | jq 'map(.host + .path) | contains(["https://plugins.gradle.org/m2/org/yaml/snakeyaml/1.21/snakeyaml-1.21"])'
+
+POM_URL=${1}
+
+# If this link was already loaded then skip
+if [ -f "$DEPS_JSON_OLD" ]; then
+    RESULT=$(jq ".[] | select(.host + \"\/\" + .path + \".pom\" == \"$POM_URL\")" < $DEPS_JSON_OLD)
+
+    if [ ! "$RESULT" == "" ]; then
+        echo -e "$RESULT,"
+	exit
+    fi
+fi
+
+# https://dl.google.com/dl/android/maven2//androidx/activity/activity/1.0.0/activity-1.0.0.pom
+
+# cat $DEPS_JSON | jq "select(.host + "/" + .path + ."pom" == "https://dl.google.com/dl/android/maven2//androidx/activity/activity/1.0.0/activity-1.0.0.pom")"
+   
 if [ "$REPOS_FILE" == "" ]; then
     declare -a REPOS=(
 	# As many repos as I know
@@ -46,7 +65,6 @@ if [[ -z "${1}" ]]; then
     exit 1
 fi
 
-POM_URL=${1}
 # Drop the POM extension
 OBJ_REL_URL=${POM_URL%.pom}
 

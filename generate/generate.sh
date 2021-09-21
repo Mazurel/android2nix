@@ -140,6 +140,9 @@ function gen_deps_urls() {
 # Generate the JSON that Nix will consume.
 function gen_deps_json() {
     echo "This may take a while, you may want to specify --jobs argument ..."
+
+    export DEPS_JSON_OLD=$DEPS_JSON.old
+    [ -f $DEPS_JSON ] && cp $DEPS_JSON $DEPS_JSON_OLD
     
     # Open the Nix attribute set.
     echo -n "[" > ${DEPS_JSON}
@@ -158,6 +161,10 @@ function gen_deps_json() {
 
     # Close the Nix attribute set
     echo "]" >> ${DEPS_JSON}
+
+    PREFORMATTED_CONTENTS=$(cat ${DEPS_JSON})
+    
+    echo ${PREFORMATTED_CONTENTS} | jq > ${DEPS_JSON}
 }
 
 # ------- Main -------

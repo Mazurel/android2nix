@@ -1,4 +1,4 @@
-{ stdenv, lib, go-maven-resolver, parallel, makeWrapper, ... }:
+{ stdenv, lib, go-maven-resolver, parallel, jq, makeWrapper, ... }:
 stdenv.mkDerivation {
   pname = "generate";
   version = "0.1";
@@ -7,7 +7,7 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ makeWrapper ];
   
-  buildInputs = [ go-maven-resolver parallel ];
+  buildInputs = [ go-maven-resolver parallel jq ];
 
   installPhase = ''
   mkdir -p $out/bin
