@@ -11,7 +11,55 @@ It is currently supposed to build Briar app.
 
 ### Set Nix up 
 
-TODO: Use `lib.makeAndroid2nixEnv`
+Example:
+
+flake.nix:
+
+```nix
+{
+  description = "Example description";
+
+  inputs.android2nix.url = "github:Mazurel/android2nix";
+
+  outputs = { self, android2nix }:
+    android2nix.lib.mkAndroid2nixEnv (
+      { gradle, jdk11, ... }: {
+      pname = "Some project";
+      src = ./.;
+      gradlePkg = gradle_6;
+      jdk = jdk11;
+      devshell = ./nix/devshell.toml;
+      deps = ./nix/deps.json;
+      buildType = "assembleRelease";
+    });
+}
+```
+
+nix/devshell.toml:
+
+```toml
+[devshell]
+name = "Example devshell"
+
+startup.main.text = "cd nix"
+
+# Here you can specify all Android SDK settings.
+# For available options, please see https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/mobile/androidenv/compose-android-packages.nix
+[android]
+platformToolsVersion = "31.0.3"
+buildToolsVersions = [ "30.0.2", "31.0.0" ]
+platformVersions = [ "29" ]
+abiVersions = [ "armeabi-v7a", "arm64-v8a" ]
+ndkVersions = [ "20.0.5594570" ]
+cmakeVersions = [ "3.6.4111459" ]
+emulatorVersion = "30.8.4"
+includeNDK = false
+includeEmulator = false
+includeSources = false
+includeSystemImages = false
+useGoogleAPIs = false
+useGoogleTVAddOns = false
+```
 
 ### After setting Nix up
 
@@ -19,6 +67,7 @@ Load up dev shell and generate deps.json
 
 ```
 nix develop .
+# To get all options avaiable via generate, run generate --help
 generate --root-dir <Android app dir>
 ```
 
@@ -26,6 +75,9 @@ Build the app
 ```
 nix build .#release
 ```
+
+If they are some missing dependencies, add them manually to the `additional-deps.list` and rerun `generate` command (`gen_deps_list`, `gen_deps_urls` and `gen_deps_json` tasks).
+It should go faster the second time as there is some basic caching implemented.
 
 ## Known issues
 
