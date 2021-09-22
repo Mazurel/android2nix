@@ -25,7 +25,12 @@
                 overlays = [ devshell-flake.overlay overlay ];
               };
             in
-              pkgs.callPackage ./mkAndroid2nixEnv.nix (pkgs.callPackage attrsetFn { })
+              {
+                inherit (pkgs.callPackage ./mkAndroid2nixEnv.nix (pkgs.callPackage attrsetFn {}))
+                  defaultPackage packages devShell
+                  ;
+              }
+
         );
       };
 }
