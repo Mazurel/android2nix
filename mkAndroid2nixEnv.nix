@@ -6,7 +6,7 @@
   # User defined
 , devshell
 , deps
-, src ? null
+, src
 , ...
 } @ args:
 let
@@ -39,7 +39,7 @@ in
   };
 
   packages.local-maven-repo = mkLocalMavenRepo deps;
-  packages.release = callPackage ./build.nix
+  defaultPackage = callPackage ./build.nix
     (
       {
         local-maven-repo = (mkLocalMavenRepo deps);

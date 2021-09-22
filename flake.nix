@@ -12,7 +12,7 @@
         go-maven-resolver = prev.callPackage ./go-maven-resolver {};
         patch-maven-source = prev.callPackage ./patch-maven-srcs {};
         generate = prev.callPackage ./generate { inherit go-maven-resolver; };
-        mkLocalMavenRepo = deps-path: final.callPackage ./local-maven-repo { inherit deps-path; };
+        mkLocalMavenRepo = deps-path: final.callPackage ./mkLocalMavenRepo.nix { inherit deps-path; };
       };
     in
       {

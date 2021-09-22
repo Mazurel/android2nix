@@ -14,6 +14,7 @@
 , buildType ? "assembleDebug"
 , gradleOpts ? null
 , nestedInAndroid ? false
+, keystore ? {}
 , ...
 }:
 let
@@ -22,9 +23,11 @@ let
     makeLibraryPath checkEnvVarSet elem foldl
     ;
 
-  # Keystore can be provided via config and extra-sandbox-paths.
-  # If it is not we use an ad-hoc one generated with default password.
-  keystorePath = pkgs.callPackage ./keystore.nix {};
+  keystorePath = pkgs.callPackage ./keystore.nix {
+    alias = keystore.alias or "nixStore";
+    password = keystore.password or "nixPassword";
+    keyPassword = keystore.keyPassword or "nixPassword";
+  };
 
   latestBuildTools = foldl
     (acc: tools: if builtins.compareVersions acc.version tools.version == -1 then tools else acc)

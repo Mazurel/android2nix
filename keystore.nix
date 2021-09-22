@@ -4,14 +4,14 @@
 # WARNING: Do NOT use this to make a keystore that needs to be secret!
 #          Using a derivation will store the inputs in a .drv file.
 #
-{ stdenv, lib, pkgs, alias ? "nixStore", pasword ? "nixPassword", keyPassword ? "nixPassword" }:
+{ stdenv, lib, pkgs, alias, password, keyPassword }:
 
 let
   inherit (lib) getAttr;
 
   # Loading defaults from gradle.properties which should be safe.
   KEYSTORE_ALIAS = alias;
-  KEYSTORE_PASSWORD = pasword;
+  KEYSTORE_PASSWORD = password;
   KEYSTORE_KEY_PASSWORD = keyPassword;
 
 in stdenv.mkDerivation {
