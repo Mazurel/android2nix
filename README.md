@@ -30,9 +30,8 @@ It should go faster the second time as there is some basic caching implemented.
 
 ## Known issues
 
-- Gradle plugins need to be filled manually in `additional-deps.list` (can be fixed)
-- Some files may not be avaiable from local maven repo as they are filtered by extension. If some extension is missing, please add it to `generate/url2json.sh`.
-- Sometimes dependencies are loaded correctly. In this case you need to add them manually.
+- Sometimes `generate` may file on generating urls due to timeout, you will need to rerun it again.
+- Sometimes dependencies are loaded correctly. In this case you need to add them manually to the `additional-deps.list`, see chapter below.
 - Gradle witness breaks when you are using local repo (can be fixed)
 
 ## Possible fixes for issues

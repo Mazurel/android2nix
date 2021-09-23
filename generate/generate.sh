@@ -78,18 +78,22 @@ function get_deps() {
     # Run the gradle command for a project:
     # - ':buildEnvironment' to get build tools
     # - ':dependencies' to get direct deps limited those by
+    # - ':androidDependencies' to get android specific dependencies
     #   implementation config to avoid test dependencies
     DEPS=("${@}")
     local -a BUILD_DEPS
     local -a NORMAL_DEPS
     local -a ANDROID_DEPS
     for i in "${!DEPS[@]}"; do
-	# BUILD_DEPS[${i}]="${DEPS[${i}]}:buildEnvironment"
+	BUILD_DEPS[${i}]="${DEPS[${i}]}:buildEnvironment"
 	NORMAL_DEPS[${i}]="${DEPS[${i}]}:dependencies"
-	# ANDROID_DEPS[${i}]="${DEPS[${i}]}:androidDependencies"
+	ANDROID_DEPS[${i}]="${DEPS[${i}]}:androidDependencies"
     done
 
+    ALL_DEPS="${NORMAL_DEPS[@]} ${ANDROID_DEPS[@]} ${BUILD_DEPS[@]}"
+
     # And clean up the output by:
+    # - Remove extensions after @
     # - keep only lines that start with \--- or +---
     # - drop lines that end with (*) or (n) but don't start with (+)
     # - drop lines that refer to a project
@@ -98,12 +102,17 @@ function get_deps() {
     # - extract the package name and version, ignoring version range indications,
     #   such as in `com.google.android.gms:play-services-ads:[15.0.1,16.0.0) -> 15.0.1`
 
-    ./gradlew --no-daemon --console plain \
-	"${NORMAL_DEPS[@]}" \
-	"${ANDROID_DEPS[@]}" \
-	"${BUILD_DEPS[@]}" \
-	| awk -f ${AWK_SCRIPT}
+    # FIXME: It should be possible to check if project has some method
+    #        without running gradle and waiting for it to fail
 
+    parallel --will-cite --keep-order \
+	--bar \
+	--jobs $JOBS \
+        ./gradlew --no-daemon --console plain \
+        ::: ${ALL_DEPS} \
+	| sed "s/@.*$//" \
+	| awk -f ${AWK_SCRIPT} \
+ 
     # Load additional deps if they exist
     [ -f "$ADDITIONAL_DEPS_LIST" ] && cat $ADDITIONAL_DEPS_LIST
 }
@@ -116,14 +125,17 @@ function get_projects() {
 
 # Generate list of Gradle sub-projects.
 function gen_proj_list() {
-    get_projects | sort -u -o ${PROJ_LIST}
+    get_projects | sort -u -o ${PROJ_LIST} || echo
     echo -e "Found ${GRN}$(wc -l < ${PROJ_LIST})${RST} sub-projects..."
 }
 
 # Check each sub-project in parallel, the ":" is for local deps.
 function gen_deps_list() {
+    echo "This may take a while, you may want to specify --jobs argument ..."
+    echo "There may be some Gradle errors ahead, they are expected"
+
     PROJECTS=$(cat ${PROJ_LIST})
-    get_deps ":" ${PROJECTS[@]} | sort -uV -o ${DEPS_LIST}
+    get_deps ":" ${PROJECTS[@]} | sort -uV -o ${DEPS_LIST} || echo
     echo -e "${CLR}Found ${GRN}$(wc -l < ${DEPS_LIST})${RST} direct dependencies..."
 }
 
