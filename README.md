@@ -1,65 +1,14 @@
-## This project is supposed to help with building android apps
+# Android2Nix
 
 *As you may see this repo is work in progress*
 
-This is supposed to be a tool for building Android apps with Nix.
-It is based on [status-react](https://github.com/status-im/status-react/tree/develop/nix) approach of building.
-
-It is currently supposed to build Briar app.
+This tool was build upon [status-react](https://github.com/status-im/status-react/tree/develop/nix) approach of building Android apps with Nix.
 
 ## Steps (for now)
 
 ### Set Nix up 
 
-Example:
-
-flake.nix:
-
-```nix
-{
-  description = "Example description";
-
-  inputs.android2nix.url = "github:Mazurel/android2nix";
-
-  outputs = { self, android2nix }:
-    android2nix.lib.mkAndroid2nixEnv (
-      { gradle, jdk11, ... }: {
-      pname = "Some project";
-      src = ./.;
-      gradlePkg = gradle_6;
-      jdk = jdk11;
-      devshell = ./nix/devshell.toml;
-      deps = ./nix/deps.json;
-      buildType = "assembleRelease";
-    });
-}
-```
-
-nix/devshell.toml:
-
-```toml
-[devshell]
-name = "Example devshell"
-
-startup.main.text = "cd nix"
-
-# Here you can specify all Android SDK settings.
-# For available options, please see https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/mobile/androidenv/compose-android-packages.nix
-[android]
-platformToolsVersion = "31.0.3"
-buildToolsVersions = [ "30.0.2", "31.0.0" ]
-platformVersions = [ "29" ]
-abiVersions = [ "armeabi-v7a", "arm64-v8a" ]
-ndkVersions = [ "20.0.5594570" ]
-cmakeVersions = [ "3.6.4111459" ]
-emulatorVersion = "30.8.4"
-includeNDK = false
-includeEmulator = false
-includeSources = false
-includeSystemImages = false
-useGoogleAPIs = false
-useGoogleTVAddOns = false
-```
+For setting Nix up it is recommended to use provided template. To initialize template, please run `flake init -t "github:Mazurel/android2nix"`. You can also go through it manually and see how to use it.
 
 ### After setting Nix up
 

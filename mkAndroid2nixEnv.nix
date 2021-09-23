@@ -3,15 +3,14 @@
 , gradle
 , androidenv
 , callPackage
+, lib
   # User defined
 , devshell
 , deps
 , src
+, reposFile ? null
 , ...
 } @ args:
-let
-  lib = pkgs.lib;
-in
 {
   devShell = pkgs.devshell.mkShell {
     imports = [
@@ -34,6 +33,16 @@ in
         name = "generate";
         command = "generate.sh $@";
         help = "Generate all android2nix files";
+      }
+      {
+        name = "predefined-generate";
+        command = ''
+        generate.sh \
+                    ${lib.optionalString (reposFile != null) "--repos-file ${reposFile}"} \
+                    ${lib.optionalString (args.nestedInAndroid or false) "--nested-in-android"} \
+                    $@
+        '';
+        help = "Call `generate` with predefined settings based on you flake.nix";
       }
     ];
   };

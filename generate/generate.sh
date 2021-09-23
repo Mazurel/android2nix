@@ -178,7 +178,6 @@ echo "Stopping gradle daemons ..."
 ./gradlew --stop >/dev/null
 
 # Run proper tasks
-
 if [ ! "$GEN_TASK" == "" ]; then
     echo Running "$GEN_TASK" ...
     

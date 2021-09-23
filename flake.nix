@@ -32,5 +32,10 @@
               }
 
         );
+
+        defaultTemplate = {
+          path = ./template;
+          description = "Getting started template for Android2nix";
+        };
       };
 }
