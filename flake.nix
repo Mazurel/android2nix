@@ -8,7 +8,7 @@
 
   outputs = { self, flake-utils, devshell-flake, nixpkgs }:
     let
-      overlay = final: prev: rec {
+      private-overlay = final: prev: rec {
         go-maven-resolver = prev.callPackage ./go-maven-resolver {};
         patch-maven-source = prev.callPackage ./patch-maven-srcs {};
         generate = prev.callPackage ./generate { inherit go-maven-resolver; };
@@ -16,22 +16,24 @@
       };
     in
       {
-        lib.mkAndroid2nixEnv = attrsetFn: flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" ] (
-          system:
-            let
-              pkgs = import nixpkgs {
-                inherit system;
-                config.android_sdk.accept_license = true;
-                overlays = [ devshell-flake.overlay overlay ];
-              };
-            in
-              {
-                inherit (pkgs.callPackage ./mkAndroid2nixEnv.nix (pkgs.callPackage attrsetFn {}))
-                  defaultPackage packages devShell
-                  ;
-              }
+        lib = {
+          mkAndroid2nixEnv = attrsetFn: flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" ] (
+            system:
+              let
+                pkgs = import nixpkgs {
+                  inherit system;
+                  config.android_sdk.accept_license = true;
+                  overlays = [ devshell-flake.overlay private-overlay ];
+                };
+              in
+                {
+                  inherit (pkgs.callPackage ./mkAndroid2nixEnv.nix (pkgs.callPackage attrsetFn {}))
+                    defaultPackage packages devShell
+                    ;
+                }
 
-        );
+          );
+        };
 
         defaultTemplate = {
           path = ./template;

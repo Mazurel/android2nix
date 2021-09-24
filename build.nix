@@ -14,13 +14,15 @@
 , buildType ? "assembleDebug"
 , gradleOpts ? null
 , nestedInAndroid ? false
+, extractApks ? true
+, autoSignApks ? true
 , keystore ? {}
 , ...
 }:
 let
   inherit (lib)
     toLower optionalString stringLength assertMsg
-    makeLibraryPath checkEnvVarSet elem foldl
+    makeLibraryPath checkEnvVarSet elem foldl optional
     ;
 
   keystorePath = pkgs.callPackage ./keystore.nix {
@@ -56,13 +58,14 @@ stdenv.mkDerivation rec {
 
   phases = [
     "unpackPhase"
-    "secretsPhase"
-    "keystorePhase"
+  ]
+  ++ optional autoSignApks [ "keystorePhase" ]
+  ++ [
     "preBuildPatchPhase"
     "buildPhase"
     "installPhase"
-    "signPhase"
-  ];
+  ]
+  ++ optional autoSignApks [ "signPhase" ];
 
   unpackPhase = ''
     cp -ar $src/. ./
@@ -71,7 +74,6 @@ stdenv.mkDerivation rec {
   '';
 
 
-  # TODO: Handle the case of the folder using ./android
   postUnpack = ''
     # Copy android/ directory
     ${optionalString nestedInAndroid "cd android"}    
@@ -83,13 +85,11 @@ stdenv.mkDerivation rec {
     ${patch-maven-source} ./build.gradle
   '';
 
-  # if secretsFile is not set we use generate keystore
-  secretsPhase =
-    keystorePath.shellHook;
-
   # if keystorePath is set copy it into build directory
   keystorePhase =
     ''
+      ${keystorePath.shellHook}
+
       export KEYSTORE_PATH="$PWD/${pname}.keystore"
       cp -a --no-preserve=ownership "${keystorePath}" "$KEYSTORE_PATH"
     '';
@@ -100,6 +100,7 @@ stdenv.mkDerivation rec {
 
     SETTINGS_COPY="$(cat settings.gradle)"
 
+    # Enable plugin lookup inside local maven repo
     echo "
     pluginManagement {
        repositories {
@@ -136,7 +137,11 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out
-    find . -name "*.apk" -exec cp {} $out/ \;
+    ${if extractApks
+  then
+    "find . -name \"*.apk\" -exec cp {} $out/ \;"
+  else
+    "cp -r ./* $out/"}
   '';
 
   signPhase = ''
