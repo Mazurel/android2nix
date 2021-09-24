@@ -175,8 +175,9 @@ function gen_deps_json() {
     echo "]" >> ${DEPS_JSON}
 
     PREFORMATTED_CONTENTS=$(cat ${DEPS_JSON})
-    
-    echo ${PREFORMATTED_CONTENTS} | jq > ${DEPS_JSON}
+    echo "$PREFORMATTED_CONTENTS" | jq > ${DEPS_JSON}
+
+    [ -f $DEPS_JSON_OLD ] && rm $DEPS_JSON_OLD
 }
 
 # ------- Main -------
