@@ -2,17 +2,16 @@
 , pkgs
 , lib
 , config
-, patch-maven-source
-, local-maven-repo
 , androidComposition
+, android2nix
   # User specified
 , src
 , pname
+, deps # deps.json path
 , jdk ? pkgs.jdk
 , gradlePkg ? pkgs.gradle
 , enableParallelBuilding ? true
 , buildType ? "assembleDebug"
-, gradleOpts ? null
 , nestedInAndroid ? false
 , extractApks ? true
 , autoSignApks ? true
@@ -22,7 +21,7 @@
 let
   inherit (lib)
     toLower optionalString stringLength assertMsg
-    makeLibraryPath checkEnvVarSet elem foldl optional
+    makeLibraryPath checkEnvVarSet foldl optional optionals
     ;
 
   keystorePath = pkgs.callPackage ./keystore.nix {
@@ -40,19 +39,16 @@ let
     "${build-tools}/libexec/android-sdk/build-tools/${build-tools.version}";
 
   name = "${pname}-${buildType}-android";
+
+  android2nixGradle = android2nix.gradle {
+    inherit deps androidComposition jdk gradlePkg enableParallelBuilding;
+  };
 in
 stdenv.mkDerivation rec {
   inherit name src;
 
-  buildInputs = (with pkgs; [ nodejs ]) ++ [ jdk ];
-  nativeBuildInputs = with pkgs; [ bash gradlePkg unzip ]
-  ++ lib.optionals stdenv.isDarwin [ file gnumake ];
-
-  # Android SDK/NDK for use by Gradle
-  ANDROID_SDK_ROOT = "${androidComposition.androidsdk}/libexec/android-sdk";
-  ANDROID_NDK_ROOT = "${ANDROID_SDK_ROOT}/ndk-bundle";
-
-  JAVA_HOME = "${jdk}";
+  nativeBuildInputs = with pkgs; [ bash jdk ]
+  ++ optionals stdenv.isDarwin [ file gnumake ];
 
   # Used by the Android Gradle build script in android/build.gradle
 
@@ -61,7 +57,6 @@ stdenv.mkDerivation rec {
   ]
   ++ optional autoSignApks [ "keystorePhase" ]
   ++ [
-    "preBuildPatchPhase"
     "buildPhase"
     "installPhase"
   ]
@@ -73,7 +68,6 @@ stdenv.mkDerivation rec {
     runHook postUnpack
   '';
 
-
   postUnpack = ''
     # Copy android/ directory
     ${optionalString nestedInAndroid "cd android"}    
@@ -81,11 +75,10 @@ stdenv.mkDerivation rec {
     mkdir -p build
     chmod -R +w .
 
-    # Patch build.gradle to use local repo
-    ${patch-maven-source} ./build.gradle
+    # Patch build.gradle and settings.gradle to use local repo
+    ${android2nix.patch-maven-source}
   '';
 
-  # if keystorePath is set copy it into build directory
   keystorePhase =
     ''
       ${keystorePath.shellHook}
@@ -94,52 +87,18 @@ stdenv.mkDerivation rec {
       cp -a --no-preserve=ownership "${keystorePath}" "$KEYSTORE_PATH"
     '';
 
-  preBuildPatchPhase = ''
-    # This ensures that plugins use local maven repo
-    ${optionalString nestedInAndroid "cd android"}
-
-    SETTINGS_COPY="$(cat settings.gradle)"
-
-    # Enable plugin lookup inside local maven repo
-    echo "
-    pluginManagement {
-       repositories {
-         mavenLocal()
-       }
-    }" > settings.gradle
-
-    echo "$SETTINGS_COPY" >> settings.gradle
-  '';
-
-  buildPhase = let
-    adhocEnvVars = optionalString stdenv.isLinux
-      "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${makeLibraryPath [ pkgs.zlib ]}";
-  in
+  buildPhase =
     ''
-      # Fixes issue with failing to load libnative-platform.so
-      export GRADLE_USER_HOME=$(mktemp -d)
-      export ANDROID_SDK_HOME=$(mktemp -d)
-
       ${optionalString nestedInAndroid "cd android"}
 
-      ${adhocEnvVars} ${gradlePkg}/bin/gradle \
-        ${toString gradleOpts} \
-        ${optionalString enableParallelBuilding "--parallel"} \
-        --console=plain \
-        --offline --stacktrace \
-        -Dorg.gradle.java.home="${jdk}" \
-        -Dorg.gradle.daemon=false \
-        -Dmaven.repo.local='${local-maven-repo}' \
-        -Dorg.gradle.project.android.aapt2FromMavenOverride=${getBuildToolsBin latestBuildTools}/aapt2 \
-        ${buildType} \
-        || exit 1
+      ${android2nixGradle}/bin/gradle ${buildType} || exit 1
     '';
 
   installPhase = ''
     mkdir -p $out
     ${if extractApks
   then
-    "find . -name \"*.apk\" -exec cp {} $out/ \;"
+    ''find . -name "*.apk" -exec cp {} $out/ \;''
   else
     "cp -r ./* $out/"}
   '';

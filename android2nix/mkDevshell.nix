@@ -1,14 +1,14 @@
 { pkgs, lib, reposFile, devshell, ... } @ args:
 pkgs.devshell.mkShell {
   imports = [
-    ./devshell-modules/android.nix
+    ../devshell-modules/android.nix
     (pkgs.devshell.importTOML devshell)
   ];
   devshell = {
     name = lib.mkDefault "android2nix";
 
     packages = [
-      "generate"
+      "generate-android2nix-files"
       "go-maven-resolver"
     ];
   };

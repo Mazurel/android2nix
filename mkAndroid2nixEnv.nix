@@ -1,9 +1,9 @@
 { pkgs
-, mkLocalMavenRepo
 , gradle
 , androidenv
 , callPackage
 , lib
+, android2nix
   # User defined
 , devshell
 , deps
@@ -12,23 +12,15 @@
 , ...
 } @ args:
 {
-  devShell = pkgs.callPackage ./devshell.nix {
+  devShell = android2nix.mkDevshell {
     inherit reposFile devshell;
   };
 
-  packages.local-maven-repo = mkLocalMavenRepo deps;
-  defaultPackage = callPackage ./build.nix
-    (
-      {
-        local-maven-repo = (mkLocalMavenRepo deps);
-        androidComposition = androidenv.composeAndroidPackages
-          (lib.importTOML devshell).android;
-      } // (
-        removeAttrs args [
-          "devshell"
-          "deps"
-          "systems"
-        ]
-      )
-    );
+  packages.local-maven-repo = android2nix.mkLocalMavenRepo deps;
+  defaultPackage = android2nix.mkBuild (
+    {
+      androidComposition = androidenv.composeAndroidPackages
+        (lib.importTOML devshell).android;
+    } // ( args ) # Not sure if it is a safe idea, but it is easier this way
+  );
 }
