@@ -38,8 +38,8 @@ TODO: Add some template for it or write some docs
 
 ## Known issues
 
-- Sometimes `generate` may file on generating urls due to timeout, you will need to rerun it again.
-- Sometimes dependencies are loaded correctly. In this case you need to add them manually to the `additional-deps.list`, see chapter below.
+- Sometimes `generate` may fail on generating urls due to timeout, you will need to rerun it again.
+- Sometimes dependencies are loaded incorrectly. In this case you need to add them manually to the `additional-deps.list`, see chapter below.
 - Gradle witness breaks when you are using local repo (can be fixed)
 
 ## Possible fixes for issues
