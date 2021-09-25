@@ -8,7 +8,7 @@ pkgs.devshell.mkShell {
     name = lib.mkDefault "android2nix";
 
     packages = [
-      "generate-android2nix-files"
+      "android2nix.generate"
       "go-maven-resolver"
     ];
   };

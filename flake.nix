@@ -2,13 +2,12 @@
   description = "Use Nix to compile Android apps ";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
   inputs.devshell-flake.url = "github:numtide/devshell";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
   outputs = { self, flake-utils, devshell-flake, nixpkgs }:
     let
-      private-overlay = final: prev: rec {
+      overlay = final: prev: rec {
         go-maven-resolver = prev.callPackage ./go-maven-resolver {};
 
         android2nix = {
@@ -31,6 +30,8 @@
       };
     in
       {
+        # Makes overlay available as an output
+        inherit overlay;
         lib = {
           # Helper function for creating flakes that build Android apps
           mkAndroid2nixEnv = attrsetFn: flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" ] (
@@ -39,7 +40,7 @@
                 pkgs = import nixpkgs {
                   inherit system;
                   config.android_sdk.accept_license = true;
-                  overlays = [ devshell-flake.overlay private-overlay ];
+                  overlays = [ devshell-flake.overlay overlay ];
                 };
               in
                 {

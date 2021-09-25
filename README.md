@@ -4,7 +4,7 @@
 
 This tool was build upon [status-react](https://github.com/status-im/status-react/tree/develop/nix) approach of building Android apps with Nix.
 
-## Steps (for now)
+## Steps for building typical Android application
 
 ### Set Nix up 
 
@@ -27,6 +27,12 @@ nix build .#release
 
 If they are some missing dependencies, add them manually to the `additional-deps.list` and rerun `generate` command (`gen_deps_list`, `gen_deps_urls` and `gen_deps_json` tasks).
 It should go faster the second time as there is some basic caching implemented.
+
+## Steps for using android2nix in harder scenarios
+
+Currently it is the best to look through the overlay and see how each component is used in `android2nix/mkBuild.nix`
+
+TODO: Add some template for it or write some docs
 
 ## Known issues
 
