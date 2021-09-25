@@ -1,5 +1,7 @@
 # Android2Nix
 
+**WARNING:** Currently this project requires usage of flakes. To install and enable flakes, see [this Nixos Wiki link](https://nixos.wiki/wiki/Flakes).
+
 *As you may see this repo is work in progress*
 
 This tool was build upon [status-react](https://github.com/status-im/status-react/tree/develop/nix) approach of building Android apps with Nix.
