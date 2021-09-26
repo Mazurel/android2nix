@@ -7,7 +7,7 @@
 
   outputs = { self, flake-utils, devshell-flake, nixpkgs }:
     let
-      overlay = final: prev: rec {
+      overlay = final: prev: (rec {
         go-maven-resolver = prev.callPackage ./go-maven-resolver {};
 
         android2nix = {
@@ -27,7 +27,8 @@
           # Builder for creating local maven repo
           mkLocalMavenRepo = deps-path: final.callPackage ./android2nix/mkLocalMavenRepo.nix { inherit deps-path; };
         };
-      };
+      })
+      // devshell-flake.overlay final prev;
     in
       {
         # Makes overlay available as an output
