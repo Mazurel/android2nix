@@ -1,3 +1,6 @@
+# This derivation creates gradle wrapper that uses
+# local maven repository, created by `android2nix.generate`
+# and can be used for declarative android apks building.
 { stdenv
 , pkgs
 , lib

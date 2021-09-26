@@ -1,3 +1,5 @@
+# This builder creates local maven repo in the Nix store.
+# It is used in android2nix.gradle.
 { stdenv, lib, pkgs, fetchurl, writeShellScriptBin, deps-path }:
 let
   inherit (builtins) removeAttrs;

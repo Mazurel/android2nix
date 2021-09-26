@@ -1,6 +1,5 @@
-# This script patches build.gradle files in node_modules to use
+# This script patches build.gradle and settings.gradle files to use
 # our local version of Maven dependencies instead of fetching them.
-
 { stdenv, writeScript, runtimeShell }:
 let
   patch-build-gradle = writeScript "patch-build-gradle" ''

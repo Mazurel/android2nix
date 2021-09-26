@@ -1,3 +1,5 @@
+# Simple devshell builder that provides android2nix.generate
+# which is required for generating `repo.json`
 { pkgs, lib, reposFile, devshell, ... } @ args:
 pkgs.devshell.mkShell {
   imports = [

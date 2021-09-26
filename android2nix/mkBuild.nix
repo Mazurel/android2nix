@@ -1,3 +1,7 @@
+# This is a generic builder for building android SDK
+# It is designed for buidling `classical` Android apps.
+# It also can sign Apks for local used or debug with simple keystore
+# (usage of it is discouraged for release, see android2nix/keystore.nix).
 { stdenv
 , pkgs
 , lib
