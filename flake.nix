@@ -21,7 +21,7 @@
           # Android2nix gradle builder
           mkBuild = final.callPackage ./android2nix/mkBuild.nix;
           # Script for patching gradle source, so that it uses local maven repo
-          patch-maven-source = prev.callPackage ./android2nix/patch-maven-source.nix {};
+          patch-maven-source = final.callPackage ./android2nix/patch-maven-source.nix { };
           # Android2nix generator for fetching dependencies
           generate = prev.callPackage ./generate { inherit go-maven-resolver; };
           # Builder for creating local maven repo

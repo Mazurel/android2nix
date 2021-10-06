@@ -51,8 +51,6 @@ done
 CUR_DIR=$(pwd)
 AWK_SCRIPT="$(dirname $(realpath "$0"))/gradle_parser.awk"
 
-
-# Pasted here from https://github.com/status-im/status-react/blob/develop/scripts/colors.sh
 # Colors
 export YLW='\033[1;33m'
 export RED='\033[0;31m'

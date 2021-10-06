@@ -11,7 +11,7 @@
 , reposFile ? null
 , ...
 } @ args:
-{
+rec {
   devShell = android2nix.mkDevshell {
     inherit reposFile devshell;
   };
@@ -23,4 +23,6 @@
         (lib.importTOML devshell).android;
     } // ( args ) # Not sure if it is a safe idea, but it is easier this way
   );
+
+  checks = defaultPackage;
 }

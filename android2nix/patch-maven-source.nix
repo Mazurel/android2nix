@@ -14,12 +14,15 @@ let
 
     gradleFile="$1"
 
+    # TODO: Consider using just `maven` in the future
+    localMavenRepos='mavenLocal()'
+
     # Some of those find something, some don't, that's fine.
-    patchMavenSource "$gradleFile" 'mavenCentral()'                       'mavenLocal()'
-    patchMavenSource "$gradleFile" 'google()'                             'mavenLocal()'
-    patchMavenSource "$gradleFile" 'jcenter()'                            'mavenLocal()'
-    patchMavenSource "$gradleFile" 'maven { url "https://jitpack.io" }'   'mavenLocal()'
-    patchMavenSource "$gradleFile" 'maven { url 'https://plugins.gradle.org/m2/' }'   'mavenLocal()'
+    patchMavenSource "$gradleFile" 'mavenCentral()'                       "$localMavenRepos"
+    patchMavenSource "$gradleFile" 'google()'                             "$localMavenRepos"
+    patchMavenSource "$gradleFile" 'jcenter()'                            "$localMavenRepos"
+    patchMavenSource "$gradleFile" 'maven { url "https://jitpack.io" }'   "$localMavenRepos"
+    patchMavenSource "$gradleFile" 'maven { url 'https://plugins.gradle.org/m2/' }'   "$localMavenRepos"
   '';
 
   patch-settings-gradle = writeScript "patch-settings-gradle" ''
@@ -42,6 +45,6 @@ writeScript "patch-maven-srcs" (
     #!${runtimeShell}
 
     find . -name "build.gradle" -exec ${patch-build-gradle} {} \;
-    ${patch-settings-gradle} settings.gradle 
+    [ -f settings.gradle ] && ${patch-settings-gradle} settings.gradle || echo ""
   ''
 )
