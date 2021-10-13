@@ -6,6 +6,18 @@
 
 This tool was build upon [status-react](https://github.com/status-im/status-react/tree/develop/nix) approach of building Android apps with Nix.
 
+**Table of contents**
+
+- [Built with android2nix](#example-android-apps-built-with-android2nix)
+- [Building typical Android application](#steps-for-building-typical-android-application)
+- [Android2nix for custom scenarios](#steps-for-using-android2nix-in-harder-scenarios)
+- [Known issues](#known-issues)
+
+## Example Android apps built with android2nix
+
+- [Briar](https://github.com/ngi-nix/briar/tree/with-source)
+- [Conversations](https://github.com/ngi-nix/Conversations-1)
+
 ## Steps for building typical Android application
 
 ### Set Nix up 
